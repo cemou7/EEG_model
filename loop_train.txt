@@ -1,0 +1,3 @@
+Trainning A01: 
+Train Acc No Aug: 0.9689670138888888
+Best Test Acc No Aug: 0.6440972222222222
