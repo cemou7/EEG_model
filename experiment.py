@@ -1,21 +1,22 @@
-import torch
-import numpy as np
-import torch.nn as nn
-from torch.optim.lr_scheduler import CosineAnnealingLR
-from torch.utils.tensorboard import SummaryWriter
-from data_processing.data_augmentation import Transform, trans_example_plot
-import torch.nn.functional as F
-from openTSNE import TSNE
-from sklearn.decomposition import PCA
-import matplotlib.pyplot as plt
-import shutil
 import os
-import io
-import PIL.Image
-from torchvision.transforms import ToTensor
-from matplotlib.animation import FuncAnimation
+import shutil
 # from umap import UMAP
 import sys
+import time
+
+import matplotlib.pyplot as plt
+import numpy as np
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+from matplotlib.animation import FuncAnimation
+from openTSNE import TSNE
+from sklearn.decomposition import PCA
+from torch.optim.lr_scheduler import CosineAnnealingLR
+from torch.utils.tensorboard import SummaryWriter
+
+from data_processing.data_augmentation import Transform, trans_example_plot
+
 sys.path.append("/home/work3/wkh/CL-Model")
 
 
@@ -149,8 +150,8 @@ class Experiment(object):
 
         iteration = 0
         best_acc = 0
-        shutil.rmtree("./logs_run")
-        self.writer = SummaryWriter("./logs_run")
+        saved_epoch = 0
+        self.writer = SummaryWriter(log_dir=f"./logs_run/{self.model_name}_{time.strftime('%Y%m%d_%H-%M-%S')}")
         for epoch in range(self.epochs):
 
             print("****************************第 {} 轮训练开始****************************".format(epoch + 1))
@@ -158,7 +159,7 @@ class Experiment(object):
             # 训练开始
             self.model.train()
             evaluation = []
-            saved_epoch = 0
+
             for batch_i, (X, y) in enumerate(self.train_dataloader):
 
                 # 1. data augmentation
@@ -173,7 +174,7 @@ class Experiment(object):
                         trans.append(t2)
                     trans = np.reshape(np.concatenate(trans), (-1, origin_X.shape[1], origin_X.shape[2]))
                     trans = torch.tensor(trans, dtype=torch.float).to(self.device)
-                    if self.model_name in ['EEG_Conformer', 'LMDANet']:
+                    if self.model_name in ['EEG_Conformer', 'LMDANet', 'EEGNet']:
                         X = X.unsqueeze(1)
                     if self.model_name in ['dfformer']:
                         X = X.unsqueeze(2)
@@ -184,7 +185,7 @@ class Experiment(object):
                 else:
                     X = X.to(self.device)
                     y = y.to(self.device).long()
-                    if self.model_name in ['EEG_Conformer', 'LMDANet']:
+                    if self.model_name in ['EEG_Conformer', 'LMDANet', 'EEGNet']:
                         X = X.unsqueeze(1)
                     if self.model_name in ['dfformer']:
                         X = X.unsqueeze(2)
@@ -218,7 +219,7 @@ class Experiment(object):
                     X = X.to(self.device)
                     y = y.to(self.device).long()
 
-                    if self.model_name in ['EEG_Conformer', 'LMDANet']:
+                    if self.model_name in ['EEG_Conformer', 'LMDANet','EEGNet']:
                         X = X.unsqueeze(1)
                     if self.model_name in ['dfformer']:
                         X = X.unsqueeze(2)
@@ -239,9 +240,9 @@ class Experiment(object):
 
             if eval_acc > best_acc:
                 best_acc = eval_acc
-                if epoch > 50:
-                    saved_epoch = epoch + 1
-                    torch.save(self.model.state_dict(), self.model_save_path)
+                # if epoch > 50:
+                saved_epoch = epoch + 1
+                torch.save(self.model.state_dict(), self.model_save_path)
 
         self.writer.close()
         # torch.save(self.model.state_dict(), self.model_save_path)
@@ -256,7 +257,7 @@ class Experiment(object):
         iteration = 0
         train_losses = []
         eval_losses = []
-        shutil.rmtree("./logs_train")
+        self.writer = SummaryWriter(log_dir=f"./logs_run/{self.model_name}_{time.strftime('%Y%m%d_%H%M%S')}")
         self.writer = SummaryWriter("./logs_train")
         for epoch in range(self.epochs):
 
@@ -752,9 +753,6 @@ class Experiment(object):
         elif method == "t-SNE":
             tsne = TSNE(n_components=2, random_state=42)
             result = tsne.fit(encoded_data)
-        elif method == "UMAP":
-            umap = UMAP(n_components=2, random_state=42)      # metric='cosine', n_neighbors=72
-            result = umap.fit_transform(encoded_data)
         else:
             return False
 

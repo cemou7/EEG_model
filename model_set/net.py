@@ -131,12 +131,12 @@ class EEGNet(nn.Module):
 
 
 if __name__ == '__main__':
-    model = EEGNet(num_classes=2, chans=12, samples=1921, kernLength=512//2).cuda()
-    a = torch.randn(64, 1, 12, 1921).cuda().float()
+    model = EEGNet(num_classes=4, chans=22, samples=1000, kernLength=512//2).cuda()
+    a = torch.randn(64, 1, 22, 1000).cuda().float()
     l2 = model(a)
     model_optimizer = torch.optim.AdamW(model.parameters(), lr=1e-3, weight_decay=1e-2)
 
-    summary(model, input_size=(1, 12, 1921), batch_size=32)
+    summary(model, input_size=(1, 22, 1000), batch_size=32)
     # print(model)
     print(l2.shape)
 

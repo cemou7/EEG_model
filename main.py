@@ -145,7 +145,7 @@ def get_model(model_name, device, model_classification):
     elif model_name == 'MixFormer':
         eeg_net = MixFormer.MixFormer(cla=model_classification)
     elif model_name == 'EEGNet':
-        eeg_net = EEGNet(num_classes=4)
+        eeg_net = EEGNet(num_classes=4, chans=22, samples=1000, kernLength=512//2)
     else:
         eeg_net = ShallowConvNet(num_classes=4, chans=22, samples=1125)
 
@@ -190,6 +190,26 @@ def get_data_bci2a_cross_validation(batch_size, valid_data_set):
 
     return train_dataloader, test_dataloader
 
+def get_data_bci2a_test_vaild(batch_size):
+
+
+    valid_data = np.load('data2a/data_bci2a_valid_data.npy')
+    valid_label = np.load('data2a/data_bci2a_valid_label.npy')
+
+    train_data = np.load('data2a/data_bci2a_train_data.npy')
+    train_label = np.load('data2a/data_bci2a_train_label.npy')
+
+
+    train_dataset = EEGDataSet(train_data, train_label)
+    val_dataset = EEGDataSet(valid_data, valid_label)
+
+    print('训练数据集长度: {}'.format(len(train_dataset)))
+    print('验证数据集长度: {}'.format(len(val_dataset)))
+
+    train_dataloader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True, drop_last=False)
+    test_dataloader = DataLoader(val_dataset, batch_size=batch_size, shuffle=False, drop_last=False)
+
+    return train_dataloader, test_dataloader
 
 if __name__ == '__main__':
     # 随机种子，保证生成的随机数是一样的
@@ -204,7 +224,7 @@ if __name__ == '__main__':
 
     # ===============================  超 参 数 设 置 ================================
     lr_model = 0.003
-    epochs = 300
+    epochs = 1000
     batch_size = 64
 
     temperature = 0.1       # contrastive loss default = 0.1
@@ -223,14 +243,15 @@ if __name__ == '__main__':
     kwargs = {'num_workers': 1, 'pin_memory': True}
     # ============================
     data_set = 'A01'      # 'A01', 'A02', 'A03', 'A04', 'A05', 'A06', 'A07', 'A08'
-    model_name = 'LMDANet'     # LMDANet   EEG_Conformer   PatchTST    iTransformer    MixFormer   dfformer
-    model_save_path = "model/" + model_name + "_valid_A09.pth"    # _classification  _diff_CL_64
+    model_name = 'EEG_Conformer'     # LMDANet   EEG_Conformer   PatchTST    iTransformer    MixFormer   dfformer EEGNet
+    model_save_path = "model/" + model_name + "_test_val.pth"    # _classification  _diff_CL_64  _test_val
     classification = True                                      # False: pre-train contrastive net  or  True: fine-tone
     # ============================
 
     # train_dataloader, test_dataloader = get_dataloader(data_set=data_set, batch_size=batch_size)
     # train_dataloader, test_dataloader = get_pre_dataloader(data_set=data_set, batch_size=batch_size)
-    train_dataloader, test_dataloader = get_data_bci2a_cross_validation(batch_size=batch_size, valid_data_set=data_set)
+    # train_dataloader, test_dataloader = get_data_bci2a_cross_validation(batch_size=batch_size, valid_data_set=data_set)
+    train_dataloader, test_dataloader = get_data_bci2a_test_vaild(batch_size=batch_size)
 
     device = get_device()
     model = get_model(model_name=model_name, device=device, model_classification=classification)
@@ -267,7 +288,8 @@ if __name__ == '__main__':
     # exp.draw_point_feature(train_data=test_dataloader_A09)
 
     exp.run()
-    # exp.train_run()
+    # exp.train_run()best acc: 0.6267361111111112
+    # save model epoch: 0
 
     # exp.run_add_loss_contrast(lamda=0.6)
     # exp.test_run_classification()

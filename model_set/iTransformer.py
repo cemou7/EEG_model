@@ -9,14 +9,14 @@ import argparse
 def set_parser():
     parser = argparse.ArgumentParser(description='iTransformer')
 
-    parser.add_argument('--seq_len', type=int, default=1125, help='input sequence length')        # default:96
+    parser.add_argument('--seq_len', type=int, default=1000, help='input sequence length')        # default:96
     parser.add_argument('--pred_len', type=int, default=128, help='prediction sequence length')  # default:96
     parser.add_argument('--output_attention', action='store_true', help='whether to output attention in ecoder')
     parser.add_argument('--use_norm', type=int, default=True, help='use norm and denorm')
     parser.add_argument('--embed', type=str, default='timeF',
                         help='time features encoding, options:[timeF, fixed, learned]')
     parser.add_argument('--dropout', type=float, default=0.1, help='dropout')
-    parser.add_argument('--d_model', type=int, default=512, help='dimension of model')          # default:512
+    parser.add_argument('--d_model', type=int, default=256, help='dimension of model')          # default:512
     parser.add_argument('--n_heads', type=int, default=8, help='num of heads')
     parser.add_argument('--e_layers', type=int, default=2, help='num of encoder layers')
     parser.add_argument('--d_ff', type=int, default=2048, help='dimension of fcn')              # default:2048
@@ -43,7 +43,7 @@ def set_parser():
                         help='start token length')  # no longer needed in inverted Transformers
 
     # model define
-    parser.add_argument('--enc_in', type=int, default=7, help='encoder input size')
+    parser.add_argument('--enc_in', type=int, default=22, help='encoder input size')
     parser.add_argument('--dec_in', type=int, default=7, help='decoder input size')
     parser.add_argument('--c_out', type=int, default=7,
                         help='output size')  # applicable on arbitrary number of variates in inverted Transformers
@@ -298,7 +298,7 @@ class iTransformer(nn.Module):
         self.output_attention = configs.output_attention
         self.use_norm = configs.use_norm
         # Embedding
-        self.enc_embedding = DataEmbedding_inverted(configs.seq_len, configs.d_model, configs.embed, configs.freq,
+        self.enc_embedding = DataEmbedding_inverted(configs.enc_in, configs.d_model, configs.embed, configs.freq,
                                                     configs.dropout)
         self.class_strategy = configs.class_strategy
         # Encoder-only architecture
@@ -374,7 +374,7 @@ if __name__ == '__main__':
     model = iTransformer(args, cla=True).cuda()
     # model = ConvChannel().cuda()
 
-    x = torch.randn(32, 22, 1125).cuda().float()      # input:(batch_size, seq_length, channel)
+    x = torch.randn(32, 1000,22 ).cuda().float()      # input:(batch_size, seq_length, channel)
     outputs = model(x)
 
     # summary(self.model, input_size=(1000, 22), batch_size=8)
