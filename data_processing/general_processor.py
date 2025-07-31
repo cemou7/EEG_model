@@ -5,7 +5,7 @@ from mne.channels import make_standard_montage
 from mne.datasets import eegbci
 from mne.epochs import Epochs
 import mne
-from typing import List
+from typing import List, Tuple
 import wget
 import sys
 from sklearn.preprocessing import minmax_scale
@@ -245,7 +245,7 @@ class Utils:
 
     @staticmethod
     def epoch(raws: List[BaseRaw], exclude_base: bool =False, num_class: int = 5,
-              tmin: int =0, tmax: int =4) -> (np.ndarray, List):
+              tmin: int =0, tmax: int =4) -> Tuple[np.ndarray, List[str]]:
         """
         Split the original BaseRaw into numpy epochs
         :param raws: List[BaseRaw]
