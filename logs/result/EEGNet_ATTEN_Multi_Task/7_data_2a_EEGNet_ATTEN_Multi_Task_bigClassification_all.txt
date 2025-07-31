@@ -1,0 +1,4 @@
+Subject: <built-in function all> | Train Task1 Acc: 0.9880 | Train Task2 Acc: 0.9306 | Final Test Task1 Acc: 0.8756 | Final Test Task2 Acc: 0.6151 | Best Task1 Test Acc: 0.6388 | Best Epoch: 270
+--------------------------------------------------
+Average Test Accuracy across subjects on Supervised: 0.6388
+==================================================

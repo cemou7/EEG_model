@@ -1,0 +1,802 @@
+********** Subject A08 - Epoch 1 **********
+Train Loss=213.7373
+Task1 Train Acc=0.6952, Task2 Train Acc=0.2545
+Task1 Test Acc=0.8422, Task2 Test Acc=0.2821
+********** Subject A08 - Epoch 2 **********
+Train Loss=143.9559
+Task1 Train Acc=0.8505, Task2 Train Acc=0.2796
+Task1 Test Acc=0.8692, Task2 Test Acc=0.3071
+********** Subject A08 - Epoch 3 **********
+Train Loss=128.1105
+Task1 Train Acc=0.8731, Task2 Train Acc=0.3907
+Task1 Test Acc=0.8794, Task2 Test Acc=0.3321
+********** Subject A08 - Epoch 4 **********
+Train Loss=120.2865
+Task1 Train Acc=0.8835, Task2 Train Acc=0.3190
+Task1 Test Acc=0.8538, Task2 Test Acc=0.3786
+********** Subject A08 - Epoch 5 **********
+Train Loss=114.5228
+Task1 Train Acc=0.8902, Task2 Train Acc=0.3871
+Task1 Test Acc=0.8779, Task2 Test Acc=0.3571
+********** Subject A08 - Epoch 6 **********
+Train Loss=109.7283
+Task1 Train Acc=0.8939, Task2 Train Acc=0.4229
+Task1 Test Acc=0.8821, Task2 Test Acc=0.3679
+********** Subject A08 - Epoch 7 **********
+Train Loss=108.6634
+Task1 Train Acc=0.8972, Task2 Train Acc=0.3656
+Task1 Test Acc=0.8769, Task2 Test Acc=0.3893
+********** Subject A08 - Epoch 8 **********
+Train Loss=101.3012
+Task1 Train Acc=0.9080, Task2 Train Acc=0.4588
+Task1 Test Acc=0.8779, Task2 Test Acc=0.3929
+********** Subject A08 - Epoch 9 **********
+Train Loss=99.8652
+Task1 Train Acc=0.9034, Task2 Train Acc=0.4695
+Task1 Test Acc=0.8872, Task2 Test Acc=0.3893
+********** Subject A08 - Epoch 10 **********
+Train Loss=97.9950
+Task1 Train Acc=0.9132, Task2 Train Acc=0.4659
+Task1 Test Acc=0.8908, Task2 Test Acc=0.3750
+********** Subject A08 - Epoch 11 **********
+Train Loss=92.0417
+Task1 Train Acc=0.9157, Task2 Train Acc=0.5090
+Task1 Test Acc=0.9003, Task2 Test Acc=0.3750
+********** Subject A08 - Epoch 12 **********
+Train Loss=92.6975
+Task1 Train Acc=0.9117, Task2 Train Acc=0.5233
+Task1 Test Acc=0.8937, Task2 Test Acc=0.3536
+********** Subject A08 - Epoch 13 **********
+Train Loss=91.4945
+Task1 Train Acc=0.9192, Task2 Train Acc=0.5054
+Task1 Test Acc=0.8748, Task2 Test Acc=0.3714
+********** Subject A08 - Epoch 14 **********
+Train Loss=90.2095
+Task1 Train Acc=0.9161, Task2 Train Acc=0.5556
+Task1 Test Acc=0.8941, Task2 Test Acc=0.3500
+********** Subject A08 - Epoch 15 **********
+Train Loss=90.3645
+Task1 Train Acc=0.9172, Task2 Train Acc=0.5591
+Task1 Test Acc=0.8800, Task2 Test Acc=0.3893
+********** Subject A08 - Epoch 16 **********
+Train Loss=88.0992
+Task1 Train Acc=0.9201, Task2 Train Acc=0.5054
+Task1 Test Acc=0.9047, Task2 Test Acc=0.4107
+********** Subject A08 - Epoch 17 **********
+Train Loss=87.5314
+Task1 Train Acc=0.9163, Task2 Train Acc=0.5699
+Task1 Test Acc=0.8848, Task2 Test Acc=0.3857
+********** Subject A08 - Epoch 18 **********
+Train Loss=85.3314
+Task1 Train Acc=0.9176, Task2 Train Acc=0.5878
+Task1 Test Acc=0.9012, Task2 Test Acc=0.3607
+********** Subject A08 - Epoch 19 **********
+Train Loss=86.2992
+Task1 Train Acc=0.9167, Task2 Train Acc=0.5663
+Task1 Test Acc=0.8854, Task2 Test Acc=0.3714
+********** Subject A08 - Epoch 20 **********
+Train Loss=82.8581
+Task1 Train Acc=0.9255, Task2 Train Acc=0.6344
+Task1 Test Acc=0.8895, Task2 Test Acc=0.4179
+********** Subject A08 - Epoch 21 **********
+Train Loss=81.2808
+Task1 Train Acc=0.9259, Task2 Train Acc=0.5986
+Task1 Test Acc=0.8989, Task2 Test Acc=0.3500
+********** Subject A08 - Epoch 22 **********
+Train Loss=78.1926
+Task1 Train Acc=0.9277, Task2 Train Acc=0.6022
+Task1 Test Acc=0.8927, Task2 Test Acc=0.3857
+********** Subject A08 - Epoch 23 **********
+Train Loss=79.1628
+Task1 Train Acc=0.9253, Task2 Train Acc=0.5950
+Task1 Test Acc=0.8904, Task2 Test Acc=0.3929
+********** Subject A08 - Epoch 24 **********
+Train Loss=82.9634
+Task1 Train Acc=0.9234, Task2 Train Acc=0.6452
+Task1 Test Acc=0.8906, Task2 Test Acc=0.3500
+********** Subject A08 - Epoch 25 **********
+Train Loss=79.6227
+Task1 Train Acc=0.9230, Task2 Train Acc=0.6237
+Task1 Test Acc=0.8978, Task2 Test Acc=0.3786
+********** Subject A08 - Epoch 26 **********
+Train Loss=78.5068
+Task1 Train Acc=0.9288, Task2 Train Acc=0.5914
+Task1 Test Acc=0.8974, Task2 Test Acc=0.3964
+********** Subject A08 - Epoch 27 **********
+Train Loss=79.9060
+Task1 Train Acc=0.9288, Task2 Train Acc=0.6093
+Task1 Test Acc=0.8866, Task2 Test Acc=0.3750
+********** Subject A08 - Epoch 28 **********
+Train Loss=78.4745
+Task1 Train Acc=0.9250, Task2 Train Acc=0.6452
+Task1 Test Acc=0.8974, Task2 Test Acc=0.3821
+********** Subject A08 - Epoch 29 **********
+Train Loss=77.1348
+Task1 Train Acc=0.9284, Task2 Train Acc=0.6380
+Task1 Test Acc=0.9032, Task2 Test Acc=0.3750
+********** Subject A08 - Epoch 30 **********
+Train Loss=76.1474
+Task1 Train Acc=0.9267, Task2 Train Acc=0.6237
+Task1 Test Acc=0.9134, Task2 Test Acc=0.4214
+********** Subject A08 - Epoch 31 **********
+Train Loss=80.2021
+Task1 Train Acc=0.9269, Task2 Train Acc=0.6237
+Task1 Test Acc=0.8949, Task2 Test Acc=0.4143
+********** Subject A08 - Epoch 32 **********
+Train Loss=77.6616
+Task1 Train Acc=0.9271, Task2 Train Acc=0.6738
+Task1 Test Acc=0.9028, Task2 Test Acc=0.4286
+********** Subject A08 - Epoch 33 **********
+Train Loss=72.0454
+Task1 Train Acc=0.9313, Task2 Train Acc=0.6452
+Task1 Test Acc=0.8951, Task2 Test Acc=0.3929
+********** Subject A08 - Epoch 34 **********
+Train Loss=77.7979
+Task1 Train Acc=0.9265, Task2 Train Acc=0.6416
+Task1 Test Acc=0.9124, Task2 Test Acc=0.3929
+********** Subject A08 - Epoch 35 **********
+Train Loss=73.2910
+Task1 Train Acc=0.9338, Task2 Train Acc=0.6918
+Task1 Test Acc=0.8935, Task2 Test Acc=0.3893
+********** Subject A08 - Epoch 36 **********
+Train Loss=75.3783
+Task1 Train Acc=0.9306, Task2 Train Acc=0.6810
+Task1 Test Acc=0.8949, Task2 Test Acc=0.4250
+********** Subject A08 - Epoch 37 **********
+Train Loss=75.5965
+Task1 Train Acc=0.9302, Task2 Train Acc=0.6953
+Task1 Test Acc=0.9037, Task2 Test Acc=0.4250
+********** Subject A08 - Epoch 38 **********
+Train Loss=71.9831
+Task1 Train Acc=0.9338, Task2 Train Acc=0.6774
+Task1 Test Acc=0.8927, Task2 Test Acc=0.4036
+********** Subject A08 - Epoch 39 **********
+Train Loss=73.1002
+Task1 Train Acc=0.9338, Task2 Train Acc=0.7455
+Task1 Test Acc=0.9115, Task2 Test Acc=0.4179
+********** Subject A08 - Epoch 40 **********
+Train Loss=72.2460
+Task1 Train Acc=0.9338, Task2 Train Acc=0.6989
+Task1 Test Acc=0.8887, Task2 Test Acc=0.4250
+********** Subject A08 - Epoch 41 **********
+Train Loss=72.2529
+Task1 Train Acc=0.9282, Task2 Train Acc=0.6810
+Task1 Test Acc=0.8927, Task2 Test Acc=0.4607
+********** Subject A08 - Epoch 42 **********
+Train Loss=74.2019
+Task1 Train Acc=0.9259, Task2 Train Acc=0.6882
+Task1 Test Acc=0.9188, Task2 Test Acc=0.3929
+********** Subject A08 - Epoch 43 **********
+Train Loss=75.4165
+Task1 Train Acc=0.9263, Task2 Train Acc=0.6989
+Task1 Test Acc=0.9126, Task2 Test Acc=0.4107
+********** Subject A08 - Epoch 44 **********
+Train Loss=71.1165
+Task1 Train Acc=0.9333, Task2 Train Acc=0.6989
+Task1 Test Acc=0.9001, Task2 Test Acc=0.4107
+********** Subject A08 - Epoch 45 **********
+Train Loss=72.6147
+Task1 Train Acc=0.9333, Task2 Train Acc=0.6703
+Task1 Test Acc=0.8981, Task2 Test Acc=0.4786
+********** Subject A08 - Epoch 46 **********
+Train Loss=70.4515
+Task1 Train Acc=0.9363, Task2 Train Acc=0.7025
+Task1 Test Acc=0.9008, Task2 Test Acc=0.4500
+********** Subject A08 - Epoch 47 **********
+Train Loss=67.3992
+Task1 Train Acc=0.9365, Task2 Train Acc=0.6953
+Task1 Test Acc=0.9059, Task2 Test Acc=0.4679
+********** Subject A08 - Epoch 48 **********
+Train Loss=72.1306
+Task1 Train Acc=0.9267, Task2 Train Acc=0.6846
+Task1 Test Acc=0.9055, Task2 Test Acc=0.4393
+********** Subject A08 - Epoch 49 **********
+Train Loss=67.8945
+Task1 Train Acc=0.9375, Task2 Train Acc=0.7133
+Task1 Test Acc=0.9016, Task2 Test Acc=0.4607
+********** Subject A08 - Epoch 50 **********
+Train Loss=71.8474
+Task1 Train Acc=0.9321, Task2 Train Acc=0.6703
+Task1 Test Acc=0.9076, Task2 Test Acc=0.4536
+********** Subject A08 - Epoch 51 **********
+Train Loss=69.6656
+Task1 Train Acc=0.9338, Task2 Train Acc=0.7025
+Task1 Test Acc=0.9026, Task2 Test Acc=0.4786
+********** Subject A08 - Epoch 52 **********
+Train Loss=72.3125
+Task1 Train Acc=0.9338, Task2 Train Acc=0.7061
+Task1 Test Acc=0.9109, Task2 Test Acc=0.4214
+********** Subject A08 - Epoch 53 **********
+Train Loss=69.4607
+Task1 Train Acc=0.9350, Task2 Train Acc=0.7276
+Task1 Test Acc=0.8995, Task2 Test Acc=0.4893
+********** Subject A08 - Epoch 54 **********
+Train Loss=71.7471
+Task1 Train Acc=0.9282, Task2 Train Acc=0.7168
+Task1 Test Acc=0.9024, Task2 Test Acc=0.4750
+********** Subject A08 - Epoch 55 **********
+Train Loss=68.5033
+Task1 Train Acc=0.9392, Task2 Train Acc=0.7563
+Task1 Test Acc=0.9022, Task2 Test Acc=0.4714
+********** Subject A08 - Epoch 56 **********
+Train Loss=68.2367
+Task1 Train Acc=0.9311, Task2 Train Acc=0.7276
+Task1 Test Acc=0.9024, Task2 Test Acc=0.5214
+********** Subject A08 - Epoch 57 **********
+Train Loss=66.7524
+Task1 Train Acc=0.9327, Task2 Train Acc=0.7384
+Task1 Test Acc=0.8981, Task2 Test Acc=0.4786
+********** Subject A08 - Epoch 58 **********
+Train Loss=67.5596
+Task1 Train Acc=0.9338, Task2 Train Acc=0.7312
+Task1 Test Acc=0.9030, Task2 Test Acc=0.4607
+********** Subject A08 - Epoch 59 **********
+Train Loss=70.5922
+Task1 Train Acc=0.9292, Task2 Train Acc=0.7204
+Task1 Test Acc=0.8796, Task2 Test Acc=0.4964
+********** Subject A08 - Epoch 60 **********
+Train Loss=69.2719
+Task1 Train Acc=0.9356, Task2 Train Acc=0.7240
+Task1 Test Acc=0.8968, Task2 Test Acc=0.4750
+********** Subject A08 - Epoch 61 **********
+Train Loss=64.6674
+Task1 Train Acc=0.9398, Task2 Train Acc=0.7849
+Task1 Test Acc=0.8981, Task2 Test Acc=0.4464
+********** Subject A08 - Epoch 62 **********
+Train Loss=65.8940
+Task1 Train Acc=0.9367, Task2 Train Acc=0.7312
+Task1 Test Acc=0.9053, Task2 Test Acc=0.4643
+********** Subject A08 - Epoch 63 **********
+Train Loss=66.1757
+Task1 Train Acc=0.9375, Task2 Train Acc=0.7240
+Task1 Test Acc=0.8914, Task2 Test Acc=0.5107
+********** Subject A08 - Epoch 64 **********
+Train Loss=65.3232
+Task1 Train Acc=0.9381, Task2 Train Acc=0.7168
+Task1 Test Acc=0.8983, Task2 Test Acc=0.4464
+********** Subject A08 - Epoch 65 **********
+Train Loss=65.3068
+Task1 Train Acc=0.9394, Task2 Train Acc=0.7742
+Task1 Test Acc=0.9047, Task2 Test Acc=0.5321
+********** Subject A08 - Epoch 66 **********
+Train Loss=66.0701
+Task1 Train Acc=0.9373, Task2 Train Acc=0.7814
+Task1 Test Acc=0.8900, Task2 Test Acc=0.4643
+********** Subject A08 - Epoch 67 **********
+Train Loss=62.9998
+Task1 Train Acc=0.9387, Task2 Train Acc=0.7885
+Task1 Test Acc=0.8904, Task2 Test Acc=0.4893
+********** Subject A08 - Epoch 68 **********
+Train Loss=64.1288
+Task1 Train Acc=0.9375, Task2 Train Acc=0.7814
+Task1 Test Acc=0.9001, Task2 Test Acc=0.5179
+********** Subject A08 - Epoch 69 **********
+Train Loss=65.5517
+Task1 Train Acc=0.9323, Task2 Train Acc=0.7993
+Task1 Test Acc=0.8991, Task2 Test Acc=0.5321
+********** Subject A08 - Epoch 70 **********
+Train Loss=62.5890
+Task1 Train Acc=0.9396, Task2 Train Acc=0.7921
+Task1 Test Acc=0.8987, Task2 Test Acc=0.5357
+********** Subject A08 - Epoch 71 **********
+Train Loss=65.4133
+Task1 Train Acc=0.9377, Task2 Train Acc=0.7563
+Task1 Test Acc=0.8949, Task2 Test Acc=0.4393
+********** Subject A08 - Epoch 72 **********
+Train Loss=61.3835
+Task1 Train Acc=0.9377, Task2 Train Acc=0.7312
+Task1 Test Acc=0.9140, Task2 Test Acc=0.4964
+********** Subject A08 - Epoch 73 **********
+Train Loss=67.3463
+Task1 Train Acc=0.9325, Task2 Train Acc=0.7384
+Task1 Test Acc=0.8978, Task2 Test Acc=0.4750
+********** Subject A08 - Epoch 74 **********
+Train Loss=63.5869
+Task1 Train Acc=0.9412, Task2 Train Acc=0.7670
+Task1 Test Acc=0.9174, Task2 Test Acc=0.5036
+********** Subject A08 - Epoch 75 **********
+Train Loss=62.8707
+Task1 Train Acc=0.9377, Task2 Train Acc=0.7814
+Task1 Test Acc=0.9001, Task2 Test Acc=0.5179
+********** Subject A08 - Epoch 76 **********
+Train Loss=65.4681
+Task1 Train Acc=0.9325, Task2 Train Acc=0.7563
+Task1 Test Acc=0.8914, Task2 Test Acc=0.4857
+********** Subject A08 - Epoch 77 **********
+Train Loss=61.1471
+Task1 Train Acc=0.9390, Task2 Train Acc=0.8100
+Task1 Test Acc=0.8719, Task2 Test Acc=0.5286
+********** Subject A08 - Epoch 78 **********
+Train Loss=62.1322
+Task1 Train Acc=0.9396, Task2 Train Acc=0.7814
+Task1 Test Acc=0.8845, Task2 Test Acc=0.4571
+********** Subject A08 - Epoch 79 **********
+Train Loss=64.4426
+Task1 Train Acc=0.9385, Task2 Train Acc=0.7706
+Task1 Test Acc=0.8864, Task2 Test Acc=0.5464
+********** Subject A08 - Epoch 80 **********
+Train Loss=62.9939
+Task1 Train Acc=0.9394, Task2 Train Acc=0.7993
+Task1 Test Acc=0.9095, Task2 Test Acc=0.5286
+********** Subject A08 - Epoch 81 **********
+Train Loss=60.8309
+Task1 Train Acc=0.9412, Task2 Train Acc=0.8029
+Task1 Test Acc=0.8966, Task2 Test Acc=0.5500
+********** Subject A08 - Epoch 82 **********
+Train Loss=61.7697
+Task1 Train Acc=0.9365, Task2 Train Acc=0.7814
+Task1 Test Acc=0.8885, Task2 Test Acc=0.4786
+********** Subject A08 - Epoch 83 **********
+Train Loss=63.9165
+Task1 Train Acc=0.9373, Task2 Train Acc=0.7957
+Task1 Test Acc=0.8845, Task2 Test Acc=0.5357
+********** Subject A08 - Epoch 84 **********
+Train Loss=62.2873
+Task1 Train Acc=0.9421, Task2 Train Acc=0.8351
+Task1 Test Acc=0.8906, Task2 Test Acc=0.5500
+********** Subject A08 - Epoch 85 **********
+Train Loss=59.6168
+Task1 Train Acc=0.9452, Task2 Train Acc=0.8100
+Task1 Test Acc=0.8954, Task2 Test Acc=0.5107
+********** Subject A08 - Epoch 86 **********
+Train Loss=59.8121
+Task1 Train Acc=0.9446, Task2 Train Acc=0.7957
+Task1 Test Acc=0.9003, Task2 Test Acc=0.4786
+********** Subject A08 - Epoch 87 **********
+Train Loss=62.1987
+Task1 Train Acc=0.9358, Task2 Train Acc=0.7778
+Task1 Test Acc=0.9082, Task2 Test Acc=0.4929
+********** Subject A08 - Epoch 88 **********
+Train Loss=61.5924
+Task1 Train Acc=0.9414, Task2 Train Acc=0.8065
+Task1 Test Acc=0.9014, Task2 Test Acc=0.4857
+********** Subject A08 - Epoch 89 **********
+Train Loss=65.6503
+Task1 Train Acc=0.9323, Task2 Train Acc=0.7993
+Task1 Test Acc=0.8951, Task2 Test Acc=0.4929
+********** Subject A08 - Epoch 90 **********
+Train Loss=62.5378
+Task1 Train Acc=0.9412, Task2 Train Acc=0.8029
+Task1 Test Acc=0.9037, Task2 Test Acc=0.5607
+********** Subject A08 - Epoch 91 **********
+Train Loss=62.3375
+Task1 Train Acc=0.9363, Task2 Train Acc=0.8136
+Task1 Test Acc=0.9037, Task2 Test Acc=0.5714
+********** Subject A08 - Epoch 92 **********
+Train Loss=61.3537
+Task1 Train Acc=0.9396, Task2 Train Acc=0.7563
+Task1 Test Acc=0.8887, Task2 Test Acc=0.5429
+********** Subject A08 - Epoch 93 **********
+Train Loss=61.6588
+Task1 Train Acc=0.9400, Task2 Train Acc=0.7885
+Task1 Test Acc=0.8941, Task2 Test Acc=0.5286
+********** Subject A08 - Epoch 94 **********
+Train Loss=60.6204
+Task1 Train Acc=0.9443, Task2 Train Acc=0.7670
+Task1 Test Acc=0.9024, Task2 Test Acc=0.5286
+********** Subject A08 - Epoch 95 **********
+Train Loss=60.5633
+Task1 Train Acc=0.9443, Task2 Train Acc=0.8136
+Task1 Test Acc=0.8619, Task2 Test Acc=0.5500
+********** Subject A08 - Epoch 96 **********
+Train Loss=61.0017
+Task1 Train Acc=0.9404, Task2 Train Acc=0.8029
+Task1 Test Acc=0.8879, Task2 Test Acc=0.5357
+********** Subject A08 - Epoch 97 **********
+Train Loss=62.4601
+Task1 Train Acc=0.9358, Task2 Train Acc=0.7670
+Task1 Test Acc=0.9018, Task2 Test Acc=0.5250
+********** Subject A08 - Epoch 98 **********
+Train Loss=61.2515
+Task1 Train Acc=0.9375, Task2 Train Acc=0.8172
+Task1 Test Acc=0.9030, Task2 Test Acc=0.5321
+********** Subject A08 - Epoch 99 **********
+Train Loss=57.9730
+Task1 Train Acc=0.9423, Task2 Train Acc=0.8029
+Task1 Test Acc=0.9022, Task2 Test Acc=0.5214
+********** Subject A08 - Epoch 100 **********
+Train Loss=59.5172
+Task1 Train Acc=0.9437, Task2 Train Acc=0.8065
+Task1 Test Acc=0.8964, Task2 Test Acc=0.4857
+********** Subject A08 - Epoch 101 **********
+Train Loss=61.9653
+Task1 Train Acc=0.9383, Task2 Train Acc=0.7921
+Task1 Test Acc=0.8987, Task2 Test Acc=0.5500
+********** Subject A08 - Epoch 102 **********
+Train Loss=57.9238
+Task1 Train Acc=0.9446, Task2 Train Acc=0.8029
+Task1 Test Acc=0.8816, Task2 Test Acc=0.5500
+********** Subject A08 - Epoch 103 **********
+Train Loss=55.5101
+Task1 Train Acc=0.9483, Task2 Train Acc=0.8172
+Task1 Test Acc=0.8972, Task2 Test Acc=0.5036
+********** Subject A08 - Epoch 104 **********
+Train Loss=61.4876
+Task1 Train Acc=0.9392, Task2 Train Acc=0.8172
+Task1 Test Acc=0.8870, Task2 Test Acc=0.5393
+********** Subject A08 - Epoch 105 **********
+Train Loss=56.4787
+Task1 Train Acc=0.9427, Task2 Train Acc=0.8136
+Task1 Test Acc=0.8970, Task2 Test Acc=0.5393
+********** Subject A08 - Epoch 106 **********
+Train Loss=60.7763
+Task1 Train Acc=0.9390, Task2 Train Acc=0.7993
+Task1 Test Acc=0.8906, Task2 Test Acc=0.5357
+********** Subject A08 - Epoch 107 **********
+Train Loss=56.7988
+Task1 Train Acc=0.9414, Task2 Train Acc=0.8100
+Task1 Test Acc=0.8816, Task2 Test Acc=0.4929
+********** Subject A08 - Epoch 108 **********
+Train Loss=58.6998
+Task1 Train Acc=0.9439, Task2 Train Acc=0.8315
+Task1 Test Acc=0.8976, Task2 Test Acc=0.5179
+********** Subject A08 - Epoch 109 **********
+Train Loss=54.9357
+Task1 Train Acc=0.9477, Task2 Train Acc=0.8387
+Task1 Test Acc=0.8974, Task2 Test Acc=0.5214
+********** Subject A08 - Epoch 110 **********
+Train Loss=59.5892
+Task1 Train Acc=0.9389, Task2 Train Acc=0.8136
+Task1 Test Acc=0.8854, Task2 Test Acc=0.5286
+********** Subject A08 - Epoch 111 **********
+Train Loss=57.2411
+Task1 Train Acc=0.9416, Task2 Train Acc=0.8136
+Task1 Test Acc=0.8810, Task2 Test Acc=0.5750
+********** Subject A08 - Epoch 112 **********
+Train Loss=60.1568
+Task1 Train Acc=0.9419, Task2 Train Acc=0.7849
+Task1 Test Acc=0.8910, Task2 Test Acc=0.5357
+********** Subject A08 - Epoch 113 **********
+Train Loss=57.6185
+Task1 Train Acc=0.9412, Task2 Train Acc=0.8746
+Task1 Test Acc=0.8958, Task2 Test Acc=0.5000
+********** Subject A08 - Epoch 114 **********
+Train Loss=56.3280
+Task1 Train Acc=0.9439, Task2 Train Acc=0.8280
+Task1 Test Acc=0.8848, Task2 Test Acc=0.5179
+********** Subject A08 - Epoch 115 **********
+Train Loss=58.0642
+Task1 Train Acc=0.9429, Task2 Train Acc=0.7921
+Task1 Test Acc=0.8850, Task2 Test Acc=0.5429
+********** Subject A08 - Epoch 116 **********
+Train Loss=57.3129
+Task1 Train Acc=0.9441, Task2 Train Acc=0.8136
+Task1 Test Acc=0.8968, Task2 Test Acc=0.5357
+********** Subject A08 - Epoch 117 **********
+Train Loss=56.3320
+Task1 Train Acc=0.9460, Task2 Train Acc=0.8387
+Task1 Test Acc=0.8893, Task2 Test Acc=0.5607
+********** Subject A08 - Epoch 118 **********
+Train Loss=55.5711
+Task1 Train Acc=0.9431, Task2 Train Acc=0.8351
+Task1 Test Acc=0.8852, Task2 Test Acc=0.4929
+********** Subject A08 - Epoch 119 **********
+Train Loss=54.0220
+Task1 Train Acc=0.9456, Task2 Train Acc=0.8100
+Task1 Test Acc=0.8902, Task2 Test Acc=0.5571
+********** Subject A08 - Epoch 120 **********
+Train Loss=56.1851
+Task1 Train Acc=0.9441, Task2 Train Acc=0.8495
+Task1 Test Acc=0.8887, Task2 Test Acc=0.5286
+********** Subject A08 - Epoch 121 **********
+Train Loss=54.1449
+Task1 Train Acc=0.9458, Task2 Train Acc=0.8315
+Task1 Test Acc=0.8924, Task2 Test Acc=0.5464
+********** Subject A08 - Epoch 122 **********
+Train Loss=57.4202
+Task1 Train Acc=0.9443, Task2 Train Acc=0.7849
+Task1 Test Acc=0.8962, Task2 Test Acc=0.5679
+********** Subject A08 - Epoch 123 **********
+Train Loss=58.2764
+Task1 Train Acc=0.9416, Task2 Train Acc=0.8172
+Task1 Test Acc=0.8860, Task2 Test Acc=0.5286
+********** Subject A08 - Epoch 124 **********
+Train Loss=54.1668
+Task1 Train Acc=0.9498, Task2 Train Acc=0.7993
+Task1 Test Acc=0.8970, Task2 Test Acc=0.5500
+********** Subject A08 - Epoch 125 **********
+Train Loss=55.7137
+Task1 Train Acc=0.9456, Task2 Train Acc=0.8244
+Task1 Test Acc=0.8949, Task2 Test Acc=0.5214
+********** Subject A08 - Epoch 126 **********
+Train Loss=55.2525
+Task1 Train Acc=0.9441, Task2 Train Acc=0.8136
+Task1 Test Acc=0.8866, Task2 Test Acc=0.5321
+********** Subject A08 - Epoch 127 **********
+Train Loss=55.8957
+Task1 Train Acc=0.9421, Task2 Train Acc=0.8172
+Task1 Test Acc=0.8927, Task2 Test Acc=0.5321
+********** Subject A08 - Epoch 128 **********
+Train Loss=53.8930
+Task1 Train Acc=0.9489, Task2 Train Acc=0.8136
+Task1 Test Acc=0.8814, Task2 Test Acc=0.5393
+********** Subject A08 - Epoch 129 **********
+Train Loss=53.7297
+Task1 Train Acc=0.9489, Task2 Train Acc=0.8280
+Task1 Test Acc=0.8885, Task2 Test Acc=0.5571
+********** Subject A08 - Epoch 130 **********
+Train Loss=56.5491
+Task1 Train Acc=0.9470, Task2 Train Acc=0.8172
+Task1 Test Acc=0.8962, Task2 Test Acc=0.5464
+********** Subject A08 - Epoch 131 **********
+Train Loss=56.7500
+Task1 Train Acc=0.9431, Task2 Train Acc=0.8387
+Task1 Test Acc=0.8881, Task2 Test Acc=0.5643
+********** Subject A08 - Epoch 132 **********
+Train Loss=56.0500
+Task1 Train Acc=0.9394, Task2 Train Acc=0.8387
+Task1 Test Acc=0.8954, Task2 Test Acc=0.5393
+********** Subject A08 - Epoch 133 **********
+Train Loss=56.4643
+Task1 Train Acc=0.9433, Task2 Train Acc=0.8674
+Task1 Test Acc=0.8937, Task2 Test Acc=0.5786
+********** Subject A08 - Epoch 134 **********
+Train Loss=54.3825
+Task1 Train Acc=0.9481, Task2 Train Acc=0.7993
+Task1 Test Acc=0.8877, Task2 Test Acc=0.5857
+********** Subject A08 - Epoch 135 **********
+Train Loss=54.4703
+Task1 Train Acc=0.9439, Task2 Train Acc=0.8315
+Task1 Test Acc=0.9007, Task2 Test Acc=0.5821
+********** Subject A08 - Epoch 136 **********
+Train Loss=54.9009
+Task1 Train Acc=0.9470, Task2 Train Acc=0.8172
+Task1 Test Acc=0.8981, Task2 Test Acc=0.5786
+********** Subject A08 - Epoch 137 **********
+Train Loss=55.6414
+Task1 Train Acc=0.9412, Task2 Train Acc=0.8710
+Task1 Test Acc=0.9064, Task2 Test Acc=0.5607
+********** Subject A08 - Epoch 138 **********
+Train Loss=56.4927
+Task1 Train Acc=0.9444, Task2 Train Acc=0.8459
+Task1 Test Acc=0.8914, Task2 Test Acc=0.5750
+********** Subject A08 - Epoch 139 **********
+Train Loss=56.4804
+Task1 Train Acc=0.9431, Task2 Train Acc=0.8208
+Task1 Test Acc=0.8980, Task2 Test Acc=0.5643
+********** Subject A08 - Epoch 140 **********
+Train Loss=52.6670
+Task1 Train Acc=0.9493, Task2 Train Acc=0.8566
+Task1 Test Acc=0.8970, Task2 Test Acc=0.5643
+********** Subject A08 - Epoch 141 **********
+Train Loss=53.2809
+Task1 Train Acc=0.9473, Task2 Train Acc=0.8315
+Task1 Test Acc=0.9024, Task2 Test Acc=0.5821
+********** Subject A08 - Epoch 142 **********
+Train Loss=55.8812
+Task1 Train Acc=0.9435, Task2 Train Acc=0.8280
+Task1 Test Acc=0.8922, Task2 Test Acc=0.5571
+********** Subject A08 - Epoch 143 **********
+Train Loss=56.9376
+Task1 Train Acc=0.9443, Task2 Train Acc=0.8387
+Task1 Test Acc=0.8976, Task2 Test Acc=0.5964
+********** Subject A08 - Epoch 144 **********
+Train Loss=54.5698
+Task1 Train Acc=0.9471, Task2 Train Acc=0.8136
+Task1 Test Acc=0.8937, Task2 Test Acc=0.5679
+********** Subject A08 - Epoch 145 **********
+Train Loss=51.1666
+Task1 Train Acc=0.9495, Task2 Train Acc=0.8423
+Task1 Test Acc=0.8931, Task2 Test Acc=0.5786
+********** Subject A08 - Epoch 146 **********
+Train Loss=53.7305
+Task1 Train Acc=0.9470, Task2 Train Acc=0.8495
+Task1 Test Acc=0.8954, Task2 Test Acc=0.5500
+********** Subject A08 - Epoch 147 **********
+Train Loss=53.6854
+Task1 Train Acc=0.9481, Task2 Train Acc=0.7849
+Task1 Test Acc=0.8960, Task2 Test Acc=0.5821
+********** Subject A08 - Epoch 148 **********
+Train Loss=51.6603
+Task1 Train Acc=0.9522, Task2 Train Acc=0.8280
+Task1 Test Acc=0.8873, Task2 Test Acc=0.5357
+********** Subject A08 - Epoch 149 **********
+Train Loss=53.0136
+Task1 Train Acc=0.9483, Task2 Train Acc=0.8387
+Task1 Test Acc=0.8980, Task2 Test Acc=0.5821
+********** Subject A08 - Epoch 150 **********
+Train Loss=51.5180
+Task1 Train Acc=0.9502, Task2 Train Acc=0.8136
+Task1 Test Acc=0.8887, Task2 Test Acc=0.5929
+********** Subject A08 - Epoch 151 **********
+Train Loss=54.5833
+Task1 Train Acc=0.9460, Task2 Train Acc=0.8065
+Task1 Test Acc=0.8929, Task2 Test Acc=0.5714
+********** Subject A08 - Epoch 152 **********
+Train Loss=51.5366
+Task1 Train Acc=0.9477, Task2 Train Acc=0.8495
+Task1 Test Acc=0.8941, Task2 Test Acc=0.5857
+********** Subject A08 - Epoch 153 **********
+Train Loss=52.7892
+Task1 Train Acc=0.9471, Task2 Train Acc=0.8423
+Task1 Test Acc=0.8904, Task2 Test Acc=0.5929
+********** Subject A08 - Epoch 154 **********
+Train Loss=49.8663
+Task1 Train Acc=0.9477, Task2 Train Acc=0.8889
+Task1 Test Acc=0.8949, Task2 Test Acc=0.5643
+********** Subject A08 - Epoch 155 **********
+Train Loss=50.6104
+Task1 Train Acc=0.9487, Task2 Train Acc=0.8602
+Task1 Test Acc=0.8995, Task2 Test Acc=0.5679
+********** Subject A08 - Epoch 156 **********
+Train Loss=52.9828
+Task1 Train Acc=0.9498, Task2 Train Acc=0.8459
+Task1 Test Acc=0.8943, Task2 Test Acc=0.5571
+********** Subject A08 - Epoch 157 **********
+Train Loss=50.2394
+Task1 Train Acc=0.9529, Task2 Train Acc=0.8244
+Task1 Test Acc=0.8962, Task2 Test Acc=0.5679
+********** Subject A08 - Epoch 158 **********
+Train Loss=50.6047
+Task1 Train Acc=0.9483, Task2 Train Acc=0.8387
+Task1 Test Acc=0.8918, Task2 Test Acc=0.5679
+********** Subject A08 - Epoch 159 **********
+Train Loss=50.6788
+Task1 Train Acc=0.9506, Task2 Train Acc=0.8638
+Task1 Test Acc=0.8870, Task2 Test Acc=0.5321
+********** Subject A08 - Epoch 160 **********
+Train Loss=50.4619
+Task1 Train Acc=0.9535, Task2 Train Acc=0.8423
+Task1 Test Acc=0.8931, Task2 Test Acc=0.5607
+********** Subject A08 - Epoch 161 **********
+Train Loss=50.1143
+Task1 Train Acc=0.9510, Task2 Train Acc=0.8280
+Task1 Test Acc=0.8912, Task2 Test Acc=0.5714
+********** Subject A08 - Epoch 162 **********
+Train Loss=54.6401
+Task1 Train Acc=0.9448, Task2 Train Acc=0.8566
+Task1 Test Acc=0.8929, Task2 Test Acc=0.5643
+********** Subject A08 - Epoch 163 **********
+Train Loss=50.2605
+Task1 Train Acc=0.9508, Task2 Train Acc=0.8315
+Task1 Test Acc=0.8927, Task2 Test Acc=0.6036
+********** Subject A08 - Epoch 164 **********
+Train Loss=53.2657
+Task1 Train Acc=0.9458, Task2 Train Acc=0.8495
+Task1 Test Acc=0.8972, Task2 Test Acc=0.5643
+********** Subject A08 - Epoch 165 **********
+Train Loss=50.2881
+Task1 Train Acc=0.9491, Task2 Train Acc=0.8530
+Task1 Test Acc=0.8954, Task2 Test Acc=0.5893
+********** Subject A08 - Epoch 166 **********
+Train Loss=50.1923
+Task1 Train Acc=0.9495, Task2 Train Acc=0.8351
+Task1 Test Acc=0.8949, Task2 Test Acc=0.6000
+********** Subject A08 - Epoch 167 **********
+Train Loss=51.0399
+Task1 Train Acc=0.9471, Task2 Train Acc=0.8495
+Task1 Test Acc=0.8968, Task2 Test Acc=0.5821
+********** Subject A08 - Epoch 168 **********
+Train Loss=53.2875
+Task1 Train Acc=0.9481, Task2 Train Acc=0.8423
+Task1 Test Acc=0.8935, Task2 Test Acc=0.5857
+********** Subject A08 - Epoch 169 **********
+Train Loss=51.7954
+Task1 Train Acc=0.9481, Task2 Train Acc=0.8889
+Task1 Test Acc=0.8935, Task2 Test Acc=0.5929
+********** Subject A08 - Epoch 170 **********
+Train Loss=49.3285
+Task1 Train Acc=0.9524, Task2 Train Acc=0.8495
+Task1 Test Acc=0.8929, Task2 Test Acc=0.5893
+********** Subject A08 - Epoch 171 **********
+Train Loss=51.0939
+Task1 Train Acc=0.9502, Task2 Train Acc=0.8602
+Task1 Test Acc=0.8943, Task2 Test Acc=0.5857
+********** Subject A08 - Epoch 172 **********
+Train Loss=50.7206
+Task1 Train Acc=0.9504, Task2 Train Acc=0.8459
+Task1 Test Acc=0.8927, Task2 Test Acc=0.5929
+********** Subject A08 - Epoch 173 **********
+Train Loss=51.0209
+Task1 Train Acc=0.9510, Task2 Train Acc=0.8638
+Task1 Test Acc=0.8920, Task2 Test Acc=0.5964
+********** Subject A08 - Epoch 174 **********
+Train Loss=52.0429
+Task1 Train Acc=0.9504, Task2 Train Acc=0.8423
+Task1 Test Acc=0.8958, Task2 Test Acc=0.6071
+********** Subject A08 - Epoch 175 **********
+Train Loss=52.3256
+Task1 Train Acc=0.9485, Task2 Train Acc=0.7921
+Task1 Test Acc=0.8962, Task2 Test Acc=0.5821
+********** Subject A08 - Epoch 176 **********
+Train Loss=52.2022
+Task1 Train Acc=0.9475, Task2 Train Acc=0.8065
+Task1 Test Acc=0.8980, Task2 Test Acc=0.5929
+********** Subject A08 - Epoch 177 **********
+Train Loss=51.4015
+Task1 Train Acc=0.9497, Task2 Train Acc=0.8351
+Task1 Test Acc=0.8960, Task2 Test Acc=0.5964
+********** Subject A08 - Epoch 178 **********
+Train Loss=52.7901
+Task1 Train Acc=0.9508, Task2 Train Acc=0.8315
+Task1 Test Acc=0.8922, Task2 Test Acc=0.5929
+********** Subject A08 - Epoch 179 **********
+Train Loss=51.4102
+Task1 Train Acc=0.9479, Task2 Train Acc=0.8495
+Task1 Test Acc=0.8966, Task2 Test Acc=0.6000
+********** Subject A08 - Epoch 180 **********
+Train Loss=53.6740
+Task1 Train Acc=0.9464, Task2 Train Acc=0.8280
+Task1 Test Acc=0.8904, Task2 Test Acc=0.5929
+********** Subject A08 - Epoch 181 **********
+Train Loss=48.0423
+Task1 Train Acc=0.9556, Task2 Train Acc=0.8315
+Task1 Test Acc=0.8868, Task2 Test Acc=0.6143
+********** Subject A08 - Epoch 182 **********
+Train Loss=51.7828
+Task1 Train Acc=0.9475, Task2 Train Acc=0.8602
+Task1 Test Acc=0.8899, Task2 Test Acc=0.5929
+********** Subject A08 - Epoch 183 **********
+Train Loss=50.2009
+Task1 Train Acc=0.9481, Task2 Train Acc=0.8423
+Task1 Test Acc=0.8931, Task2 Test Acc=0.5821
+********** Subject A08 - Epoch 184 **********
+Train Loss=52.7023
+Task1 Train Acc=0.9456, Task2 Train Acc=0.8638
+Task1 Test Acc=0.8916, Task2 Test Acc=0.6143
+********** Subject A08 - Epoch 185 **********
+Train Loss=52.0162
+Task1 Train Acc=0.9468, Task2 Train Acc=0.8746
+Task1 Test Acc=0.8926, Task2 Test Acc=0.6071
+********** Subject A08 - Epoch 186 **********
+Train Loss=49.7921
+Task1 Train Acc=0.9522, Task2 Train Acc=0.8495
+Task1 Test Acc=0.8922, Task2 Test Acc=0.5964
+********** Subject A08 - Epoch 187 **********
+Train Loss=53.6381
+Task1 Train Acc=0.9439, Task2 Train Acc=0.8459
+Task1 Test Acc=0.8939, Task2 Test Acc=0.6071
+********** Subject A08 - Epoch 188 **********
+Train Loss=48.6050
+Task1 Train Acc=0.9514, Task2 Train Acc=0.8530
+Task1 Test Acc=0.8943, Task2 Test Acc=0.5964
+********** Subject A08 - Epoch 189 **********
+Train Loss=49.1771
+Task1 Train Acc=0.9516, Task2 Train Acc=0.8244
+Task1 Test Acc=0.8958, Task2 Test Acc=0.6036
+********** Subject A08 - Epoch 190 **********
+Train Loss=49.9319
+Task1 Train Acc=0.9506, Task2 Train Acc=0.8495
+Task1 Test Acc=0.9007, Task2 Test Acc=0.5786
+********** Subject A08 - Epoch 191 **********
+Train Loss=47.3082
+Task1 Train Acc=0.9551, Task2 Train Acc=0.8423
+Task1 Test Acc=0.8970, Task2 Test Acc=0.5964
+********** Subject A08 - Epoch 192 **********
+Train Loss=52.8250
+Task1 Train Acc=0.9458, Task2 Train Acc=0.8244
+Task1 Test Acc=0.8954, Task2 Test Acc=0.5929
+********** Subject A08 - Epoch 193 **********
+Train Loss=51.8017
+Task1 Train Acc=0.9495, Task2 Train Acc=0.8280
+Task1 Test Acc=0.8972, Task2 Test Acc=0.6036
+********** Subject A08 - Epoch 194 **********
+Train Loss=47.6100
+Task1 Train Acc=0.9535, Task2 Train Acc=0.8423
+Task1 Test Acc=0.8958, Task2 Test Acc=0.6071
+********** Subject A08 - Epoch 195 **********
+Train Loss=49.1694
+Task1 Train Acc=0.9498, Task2 Train Acc=0.8781
+Task1 Test Acc=0.8954, Task2 Test Acc=0.5964
+********** Subject A08 - Epoch 196 **********
+Train Loss=49.8282
+Task1 Train Acc=0.9518, Task2 Train Acc=0.8602
+Task1 Test Acc=0.8978, Task2 Test Acc=0.5893
+********** Subject A08 - Epoch 197 **********
+Train Loss=49.8246
+Task1 Train Acc=0.9510, Task2 Train Acc=0.7849
+Task1 Test Acc=0.8949, Task2 Test Acc=0.6143
+********** Subject A08 - Epoch 198 **********
+Train Loss=51.9159
+Task1 Train Acc=0.9460, Task2 Train Acc=0.8423
+Task1 Test Acc=0.8929, Task2 Test Acc=0.5857
+********** Subject A08 - Epoch 199 **********
+Train Loss=50.7657
+Task1 Train Acc=0.9479, Task2 Train Acc=0.8853
+Task1 Test Acc=0.8958, Task2 Test Acc=0.6000
+********** Subject A08 - Epoch 200 **********
+Train Loss=49.5498
+Task1 Train Acc=0.9529, Task2 Train Acc=0.8710
+Task1 Test Acc=0.8943, Task2 Test Acc=0.6036
+
+Best Test Accuracy: 0.9188 at epoch 42

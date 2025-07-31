@@ -1,0 +1,1202 @@
+********** Subject <built-in function all> - Epoch 1 **********
+Train Loss=511.7137
+Task1 Train Acc=0.5382, Task2 Train Acc=0.2499
+Task1 Test Acc=0.6198, Task2 Test Acc=0.2723
+********** Subject <built-in function all> - Epoch 2 **********
+Train Loss=432.0655
+Task1 Train Acc=0.6763, Task2 Train Acc=0.2543
+Task1 Test Acc=0.7488, Task2 Test Acc=0.2867
+********** Subject <built-in function all> - Epoch 3 **********
+Train Loss=396.4543
+Task1 Train Acc=0.7427, Task2 Train Acc=0.2580
+Task1 Test Acc=0.7608, Task2 Test Acc=0.2936
+********** Subject <built-in function all> - Epoch 4 **********
+Train Loss=375.6103
+Task1 Train Acc=0.7782, Task2 Train Acc=0.2656
+Task1 Test Acc=0.7888, Task2 Test Acc=0.3360
+********** Subject <built-in function all> - Epoch 5 **********
+Train Loss=348.3260
+Task1 Train Acc=0.8266, Task2 Train Acc=0.2624
+Task1 Test Acc=0.8366, Task2 Test Acc=0.3252
+********** Subject <built-in function all> - Epoch 6 **********
+Train Loss=335.9378
+Task1 Train Acc=0.8418, Task2 Train Acc=0.2887
+Task1 Test Acc=0.8331, Task2 Test Acc=0.3484
+********** Subject <built-in function all> - Epoch 7 **********
+Train Loss=320.6618
+Task1 Train Acc=0.8623, Task2 Train Acc=0.2947
+Task1 Test Acc=0.8322, Task2 Test Acc=0.3452
+********** Subject <built-in function all> - Epoch 8 **********
+Train Loss=302.3012
+Task1 Train Acc=0.8893, Task2 Train Acc=0.3185
+Task1 Test Acc=0.8657, Task2 Test Acc=0.3616
+********** Subject <built-in function all> - Epoch 9 **********
+Train Loss=296.0129
+Task1 Train Acc=0.8881, Task2 Train Acc=0.3666
+Task1 Test Acc=0.8571, Task2 Test Acc=0.3708
+********** Subject <built-in function all> - Epoch 10 **********
+Train Loss=288.2712
+Task1 Train Acc=0.8953, Task2 Train Acc=0.3573
+Task1 Test Acc=0.8517, Task2 Test Acc=0.3889
+********** Subject <built-in function all> - Epoch 11 **********
+Train Loss=280.0691
+Task1 Train Acc=0.9024, Task2 Train Acc=0.3928
+Task1 Test Acc=0.8661, Task2 Test Acc=0.3933
+********** Subject <built-in function all> - Epoch 12 **********
+Train Loss=274.5024
+Task1 Train Acc=0.9145, Task2 Train Acc=0.3888
+Task1 Test Acc=0.8584, Task2 Test Acc=0.3977
+********** Subject <built-in function all> - Epoch 13 **********
+Train Loss=266.7161
+Task1 Train Acc=0.9157, Task2 Train Acc=0.4086
+Task1 Test Acc=0.8779, Task2 Test Acc=0.3985
+********** Subject <built-in function all> - Epoch 14 **********
+Train Loss=260.3062
+Task1 Train Acc=0.9192, Task2 Train Acc=0.4150
+Task1 Test Acc=0.8796, Task2 Test Acc=0.4413
+********** Subject <built-in function all> - Epoch 15 **********
+Train Loss=249.5613
+Task1 Train Acc=0.9263, Task2 Train Acc=0.4352
+Task1 Test Acc=0.8725, Task2 Test Acc=0.4257
+********** Subject <built-in function all> - Epoch 16 **********
+Train Loss=251.8886
+Task1 Train Acc=0.9265, Task2 Train Acc=0.4316
+Task1 Test Acc=0.8603, Task2 Test Acc=0.4181
+********** Subject <built-in function all> - Epoch 17 **********
+Train Loss=241.0198
+Task1 Train Acc=0.9367, Task2 Train Acc=0.4582
+Task1 Test Acc=0.8638, Task2 Test Acc=0.4397
+********** Subject <built-in function all> - Epoch 18 **********
+Train Loss=235.2676
+Task1 Train Acc=0.9325, Task2 Train Acc=0.4772
+Task1 Test Acc=0.8889, Task2 Test Acc=0.4990
+********** Subject <built-in function all> - Epoch 19 **********
+Train Loss=231.1818
+Task1 Train Acc=0.9319, Task2 Train Acc=0.5103
+Task1 Test Acc=0.8252, Task2 Test Acc=0.4866
+********** Subject <built-in function all> - Epoch 20 **********
+Train Loss=226.7909
+Task1 Train Acc=0.9369, Task2 Train Acc=0.5192
+Task1 Test Acc=0.8725, Task2 Test Acc=0.5006
+********** Subject <built-in function all> - Epoch 21 **********
+Train Loss=215.1232
+Task1 Train Acc=0.9417, Task2 Train Acc=0.5386
+Task1 Test Acc=0.8895, Task2 Test Acc=0.4994
+********** Subject <built-in function all> - Epoch 22 **********
+Train Loss=212.9258
+Task1 Train Acc=0.9427, Task2 Train Acc=0.5470
+Task1 Test Acc=0.8582, Task2 Test Acc=0.4798
+********** Subject <built-in function all> - Epoch 23 **********
+Train Loss=202.1671
+Task1 Train Acc=0.9450, Task2 Train Acc=0.5717
+Task1 Test Acc=0.8852, Task2 Test Acc=0.5322
+********** Subject <built-in function all> - Epoch 24 **********
+Train Loss=203.9422
+Task1 Train Acc=0.9470, Task2 Train Acc=0.5700
+Task1 Test Acc=0.8690, Task2 Test Acc=0.5330
+********** Subject <built-in function all> - Epoch 25 **********
+Train Loss=205.1442
+Task1 Train Acc=0.9414, Task2 Train Acc=0.5939
+Task1 Test Acc=0.8765, Task2 Test Acc=0.5110
+********** Subject <built-in function all> - Epoch 26 **********
+Train Loss=195.6986
+Task1 Train Acc=0.9514, Task2 Train Acc=0.5927
+Task1 Test Acc=0.8750, Task2 Test Acc=0.5290
+********** Subject <built-in function all> - Epoch 27 **********
+Train Loss=191.4102
+Task1 Train Acc=0.9483, Task2 Train Acc=0.5939
+Task1 Test Acc=0.8762, Task2 Test Acc=0.5531
+********** Subject <built-in function all> - Epoch 28 **********
+Train Loss=190.3786
+Task1 Train Acc=0.9489, Task2 Train Acc=0.6100
+Task1 Test Acc=0.8767, Task2 Test Acc=0.5362
+********** Subject <built-in function all> - Epoch 29 **********
+Train Loss=185.5467
+Task1 Train Acc=0.9524, Task2 Train Acc=0.6149
+Task1 Test Acc=0.8754, Task2 Test Acc=0.5346
+********** Subject <built-in function all> - Epoch 30 **********
+Train Loss=181.5632
+Task1 Train Acc=0.9552, Task2 Train Acc=0.6286
+Task1 Test Acc=0.8746, Task2 Test Acc=0.5414
+********** Subject <built-in function all> - Epoch 31 **********
+Train Loss=180.0716
+Task1 Train Acc=0.9554, Task2 Train Acc=0.6419
+Task1 Test Acc=0.8690, Task2 Test Acc=0.5491
+********** Subject <built-in function all> - Epoch 32 **********
+Train Loss=176.8501
+Task1 Train Acc=0.9549, Task2 Train Acc=0.6637
+Task1 Test Acc=0.8748, Task2 Test Acc=0.5354
+********** Subject <built-in function all> - Epoch 33 **********
+Train Loss=171.4756
+Task1 Train Acc=0.9581, Task2 Train Acc=0.6673
+Task1 Test Acc=0.8711, Task2 Test Acc=0.5439
+********** Subject <built-in function all> - Epoch 34 **********
+Train Loss=173.4498
+Task1 Train Acc=0.9554, Task2 Train Acc=0.6605
+Task1 Test Acc=0.8800, Task2 Test Acc=0.5250
+********** Subject <built-in function all> - Epoch 35 **********
+Train Loss=167.2040
+Task1 Train Acc=0.9568, Task2 Train Acc=0.6706
+Task1 Test Acc=0.8601, Task2 Test Acc=0.5431
+********** Subject <built-in function all> - Epoch 36 **********
+Train Loss=164.9931
+Task1 Train Acc=0.9554, Task2 Train Acc=0.6952
+Task1 Test Acc=0.8725, Task2 Test Acc=0.5166
+********** Subject <built-in function all> - Epoch 37 **********
+Train Loss=163.2656
+Task1 Train Acc=0.9558, Task2 Train Acc=0.6782
+Task1 Test Acc=0.8814, Task2 Test Acc=0.5427
+********** Subject <built-in function all> - Epoch 38 **********
+Train Loss=159.0484
+Task1 Train Acc=0.9622, Task2 Train Acc=0.6855
+Task1 Test Acc=0.8594, Task2 Test Acc=0.5531
+********** Subject <built-in function all> - Epoch 39 **********
+Train Loss=161.3861
+Task1 Train Acc=0.9531, Task2 Train Acc=0.6912
+Task1 Test Acc=0.8654, Task2 Test Acc=0.5783
+********** Subject <built-in function all> - Epoch 40 **********
+Train Loss=160.2362
+Task1 Train Acc=0.9593, Task2 Train Acc=0.6980
+Task1 Test Acc=0.8829, Task2 Test Acc=0.5386
+********** Subject <built-in function all> - Epoch 41 **********
+Train Loss=150.0545
+Task1 Train Acc=0.9643, Task2 Train Acc=0.7117
+Task1 Test Acc=0.8735, Task2 Test Acc=0.5567
+********** Subject <built-in function all> - Epoch 42 **********
+Train Loss=149.0837
+Task1 Train Acc=0.9606, Task2 Train Acc=0.7275
+Task1 Test Acc=0.8661, Task2 Test Acc=0.5927
+********** Subject <built-in function all> - Epoch 43 **********
+Train Loss=151.2550
+Task1 Train Acc=0.9622, Task2 Train Acc=0.7025
+Task1 Test Acc=0.8933, Task2 Test Acc=0.5503
+********** Subject <built-in function all> - Epoch 44 **********
+Train Loss=148.6270
+Task1 Train Acc=0.9622, Task2 Train Acc=0.7259
+Task1 Test Acc=0.8993, Task2 Test Acc=0.5683
+********** Subject <built-in function all> - Epoch 45 **********
+Train Loss=145.6768
+Task1 Train Acc=0.9614, Task2 Train Acc=0.7295
+Task1 Test Acc=0.8954, Task2 Test Acc=0.5819
+********** Subject <built-in function all> - Epoch 46 **********
+Train Loss=146.4971
+Task1 Train Acc=0.9610, Task2 Train Acc=0.7299
+Task1 Test Acc=0.8719, Task2 Test Acc=0.5659
+********** Subject <built-in function all> - Epoch 47 **********
+Train Loss=141.2754
+Task1 Train Acc=0.9626, Task2 Train Acc=0.7335
+Task1 Test Acc=0.8497, Task2 Test Acc=0.5867
+********** Subject <built-in function all> - Epoch 48 **********
+Train Loss=140.3041
+Task1 Train Acc=0.9612, Task2 Train Acc=0.7453
+Task1 Test Acc=0.8729, Task2 Test Acc=0.5715
+********** Subject <built-in function all> - Epoch 49 **********
+Train Loss=140.4788
+Task1 Train Acc=0.9628, Task2 Train Acc=0.7331
+Task1 Test Acc=0.8935, Task2 Test Acc=0.5731
+********** Subject <built-in function all> - Epoch 50 **********
+Train Loss=143.6425
+Task1 Train Acc=0.9614, Task2 Train Acc=0.7372
+Task1 Test Acc=0.8852, Task2 Test Acc=0.5747
+********** Subject <built-in function all> - Epoch 51 **********
+Train Loss=133.4533
+Task1 Train Acc=0.9649, Task2 Train Acc=0.7578
+Task1 Test Acc=0.8704, Task2 Test Acc=0.5675
+********** Subject <built-in function all> - Epoch 52 **********
+Train Loss=137.8795
+Task1 Train Acc=0.9612, Task2 Train Acc=0.7570
+Task1 Test Acc=0.8974, Task2 Test Acc=0.5779
+********** Subject <built-in function all> - Epoch 53 **********
+Train Loss=133.9414
+Task1 Train Acc=0.9637, Task2 Train Acc=0.7558
+Task1 Test Acc=0.8887, Task2 Test Acc=0.5983
+********** Subject <built-in function all> - Epoch 54 **********
+Train Loss=132.6744
+Task1 Train Acc=0.9670, Task2 Train Acc=0.7541
+Task1 Test Acc=0.8744, Task2 Test Acc=0.5867
+********** Subject <built-in function all> - Epoch 55 **********
+Train Loss=133.3994
+Task1 Train Acc=0.9620, Task2 Train Acc=0.7586
+Task1 Test Acc=0.8875, Task2 Test Acc=0.5879
+********** Subject <built-in function all> - Epoch 56 **********
+Train Loss=131.1564
+Task1 Train Acc=0.9635, Task2 Train Acc=0.7792
+Task1 Test Acc=0.8490, Task2 Test Acc=0.5691
+********** Subject <built-in function all> - Epoch 57 **********
+Train Loss=130.9741
+Task1 Train Acc=0.9672, Task2 Train Acc=0.7642
+Task1 Test Acc=0.8557, Task2 Test Acc=0.5799
+********** Subject <built-in function all> - Epoch 58 **********
+Train Loss=128.3105
+Task1 Train Acc=0.9684, Task2 Train Acc=0.7638
+Task1 Test Acc=0.8582, Task2 Test Acc=0.5771
+********** Subject <built-in function all> - Epoch 59 **********
+Train Loss=125.6652
+Task1 Train Acc=0.9630, Task2 Train Acc=0.7707
+Task1 Test Acc=0.8515, Task2 Test Acc=0.5835
+********** Subject <built-in function all> - Epoch 60 **********
+Train Loss=126.5572
+Task1 Train Acc=0.9653, Task2 Train Acc=0.7574
+Task1 Test Acc=0.8773, Task2 Test Acc=0.5719
+********** Subject <built-in function all> - Epoch 61 **********
+Train Loss=124.1151
+Task1 Train Acc=0.9670, Task2 Train Acc=0.7658
+Task1 Test Acc=0.8910, Task2 Test Acc=0.5891
+********** Subject <built-in function all> - Epoch 62 **********
+Train Loss=126.9674
+Task1 Train Acc=0.9682, Task2 Train Acc=0.7675
+Task1 Test Acc=0.8667, Task2 Test Acc=0.5707
+********** Subject <built-in function all> - Epoch 63 **********
+Train Loss=124.0226
+Task1 Train Acc=0.9697, Task2 Train Acc=0.7763
+Task1 Test Acc=0.8819, Task2 Test Acc=0.6115
+********** Subject <built-in function all> - Epoch 64 **********
+Train Loss=125.6195
+Task1 Train Acc=0.9678, Task2 Train Acc=0.7658
+Task1 Test Acc=0.8549, Task2 Test Acc=0.6027
+********** Subject <built-in function all> - Epoch 65 **********
+Train Loss=125.2262
+Task1 Train Acc=0.9688, Task2 Train Acc=0.7667
+Task1 Test Acc=0.8858, Task2 Test Acc=0.5811
+********** Subject <built-in function all> - Epoch 66 **********
+Train Loss=116.3084
+Task1 Train Acc=0.9709, Task2 Train Acc=0.7965
+Task1 Test Acc=0.8752, Task2 Test Acc=0.5839
+********** Subject <built-in function all> - Epoch 67 **********
+Train Loss=121.9822
+Task1 Train Acc=0.9672, Task2 Train Acc=0.7832
+Task1 Test Acc=0.8787, Task2 Test Acc=0.5831
+********** Subject <built-in function all> - Epoch 68 **********
+Train Loss=119.2602
+Task1 Train Acc=0.9659, Task2 Train Acc=0.7876
+Task1 Test Acc=0.8573, Task2 Test Acc=0.5803
+********** Subject <built-in function all> - Epoch 69 **********
+Train Loss=113.0478
+Task1 Train Acc=0.9701, Task2 Train Acc=0.8066
+Task1 Test Acc=0.8794, Task2 Test Acc=0.5819
+********** Subject <built-in function all> - Epoch 70 **********
+Train Loss=113.3592
+Task1 Train Acc=0.9703, Task2 Train Acc=0.8111
+Task1 Test Acc=0.8694, Task2 Test Acc=0.5827
+********** Subject <built-in function all> - Epoch 71 **********
+Train Loss=117.2318
+Task1 Train Acc=0.9688, Task2 Train Acc=0.7840
+Task1 Test Acc=0.8792, Task2 Test Acc=0.5967
+********** Subject <built-in function all> - Epoch 72 **********
+Train Loss=119.6012
+Task1 Train Acc=0.9676, Task2 Train Acc=0.7881
+Task1 Test Acc=0.8573, Task2 Test Acc=0.5803
+********** Subject <built-in function all> - Epoch 73 **********
+Train Loss=112.5232
+Task1 Train Acc=0.9666, Task2 Train Acc=0.8010
+Task1 Test Acc=0.8827, Task2 Test Acc=0.6163
+********** Subject <built-in function all> - Epoch 74 **********
+Train Loss=114.9294
+Task1 Train Acc=0.9709, Task2 Train Acc=0.7990
+Task1 Test Acc=0.8617, Task2 Test Acc=0.5735
+********** Subject <built-in function all> - Epoch 75 **********
+Train Loss=111.2960
+Task1 Train Acc=0.9699, Task2 Train Acc=0.8131
+Task1 Test Acc=0.8758, Task2 Test Acc=0.5951
+********** Subject <built-in function all> - Epoch 76 **********
+Train Loss=111.7267
+Task1 Train Acc=0.9734, Task2 Train Acc=0.8046
+Task1 Test Acc=0.8555, Task2 Test Acc=0.5967
+********** Subject <built-in function all> - Epoch 77 **********
+Train Loss=112.6605
+Task1 Train Acc=0.9666, Task2 Train Acc=0.8127
+Task1 Test Acc=0.8713, Task2 Test Acc=0.5487
+********** Subject <built-in function all> - Epoch 78 **********
+Train Loss=110.8395
+Task1 Train Acc=0.9676, Task2 Train Acc=0.8042
+Task1 Test Acc=0.8787, Task2 Test Acc=0.5643
+********** Subject <built-in function all> - Epoch 79 **********
+Train Loss=113.7060
+Task1 Train Acc=0.9676, Task2 Train Acc=0.8086
+Task1 Test Acc=0.8582, Task2 Test Acc=0.5843
+********** Subject <built-in function all> - Epoch 80 **********
+Train Loss=106.9558
+Task1 Train Acc=0.9740, Task2 Train Acc=0.8094
+Task1 Test Acc=0.8933, Task2 Test Acc=0.5603
+********** Subject <built-in function all> - Epoch 81 **********
+Train Loss=103.5138
+Task1 Train Acc=0.9707, Task2 Train Acc=0.8187
+Task1 Test Acc=0.8833, Task2 Test Acc=0.5811
+********** Subject <built-in function all> - Epoch 82 **********
+Train Loss=106.5083
+Task1 Train Acc=0.9734, Task2 Train Acc=0.8119
+Task1 Test Acc=0.8646, Task2 Test Acc=0.6023
+********** Subject <built-in function all> - Epoch 83 **********
+Train Loss=108.9843
+Task1 Train Acc=0.9680, Task2 Train Acc=0.8046
+Task1 Test Acc=0.8684, Task2 Test Acc=0.5663
+********** Subject <built-in function all> - Epoch 84 **********
+Train Loss=107.6088
+Task1 Train Acc=0.9697, Task2 Train Acc=0.8147
+Task1 Test Acc=0.8632, Task2 Test Acc=0.5871
+********** Subject <built-in function all> - Epoch 85 **********
+Train Loss=104.5355
+Task1 Train Acc=0.9703, Task2 Train Acc=0.8139
+Task1 Test Acc=0.8675, Task2 Test Acc=0.5935
+********** Subject <built-in function all> - Epoch 86 **********
+Train Loss=109.1937
+Task1 Train Acc=0.9695, Task2 Train Acc=0.8115
+Task1 Test Acc=0.8953, Task2 Test Acc=0.6051
+********** Subject <built-in function all> - Epoch 87 **********
+Train Loss=106.8389
+Task1 Train Acc=0.9697, Task2 Train Acc=0.8086
+Task1 Test Acc=0.8823, Task2 Test Acc=0.5991
+********** Subject <built-in function all> - Epoch 88 **********
+Train Loss=103.9156
+Task1 Train Acc=0.9689, Task2 Train Acc=0.8284
+Task1 Test Acc=0.8561, Task2 Test Acc=0.5767
+********** Subject <built-in function all> - Epoch 89 **********
+Train Loss=100.1262
+Task1 Train Acc=0.9709, Task2 Train Acc=0.8236
+Task1 Test Acc=0.8632, Task2 Test Acc=0.5687
+********** Subject <built-in function all> - Epoch 90 **********
+Train Loss=103.6032
+Task1 Train Acc=0.9738, Task2 Train Acc=0.8135
+Task1 Test Acc=0.8665, Task2 Test Acc=0.6107
+********** Subject <built-in function all> - Epoch 91 **********
+Train Loss=106.7223
+Task1 Train Acc=0.9715, Task2 Train Acc=0.8078
+Task1 Test Acc=0.8708, Task2 Test Acc=0.6083
+********** Subject <built-in function all> - Epoch 92 **********
+Train Loss=105.7230
+Task1 Train Acc=0.9728, Task2 Train Acc=0.8236
+Task1 Test Acc=0.8794, Task2 Test Acc=0.6071
+********** Subject <built-in function all> - Epoch 93 **********
+Train Loss=99.2298
+Task1 Train Acc=0.9738, Task2 Train Acc=0.8329
+Task1 Test Acc=0.8765, Task2 Test Acc=0.5791
+********** Subject <built-in function all> - Epoch 94 **********
+Train Loss=102.4983
+Task1 Train Acc=0.9689, Task2 Train Acc=0.8353
+Task1 Test Acc=0.8438, Task2 Test Acc=0.5531
+********** Subject <built-in function all> - Epoch 95 **********
+Train Loss=106.2607
+Task1 Train Acc=0.9724, Task2 Train Acc=0.8099
+Task1 Test Acc=0.8619, Task2 Test Acc=0.5827
+********** Subject <built-in function all> - Epoch 96 **********
+Train Loss=100.0169
+Task1 Train Acc=0.9713, Task2 Train Acc=0.8349
+Task1 Test Acc=0.8868, Task2 Test Acc=0.6003
+********** Subject <built-in function all> - Epoch 97 **********
+Train Loss=97.2408
+Task1 Train Acc=0.9716, Task2 Train Acc=0.8337
+Task1 Test Acc=0.8777, Task2 Test Acc=0.6075
+********** Subject <built-in function all> - Epoch 98 **********
+Train Loss=102.5565
+Task1 Train Acc=0.9695, Task2 Train Acc=0.8203
+Task1 Test Acc=0.8465, Task2 Test Acc=0.6191
+********** Subject <built-in function all> - Epoch 99 **********
+Train Loss=102.0580
+Task1 Train Acc=0.9716, Task2 Train Acc=0.8240
+Task1 Test Acc=0.8553, Task2 Test Acc=0.6147
+********** Subject <built-in function all> - Epoch 100 **********
+Train Loss=103.3161
+Task1 Train Acc=0.9728, Task2 Train Acc=0.8195
+Task1 Test Acc=0.8474, Task2 Test Acc=0.6039
+********** Subject <built-in function all> - Epoch 101 **********
+Train Loss=101.9114
+Task1 Train Acc=0.9730, Task2 Train Acc=0.8151
+Task1 Test Acc=0.8677, Task2 Test Acc=0.5679
+********** Subject <built-in function all> - Epoch 102 **********
+Train Loss=99.1008
+Task1 Train Acc=0.9715, Task2 Train Acc=0.8333
+Task1 Test Acc=0.8736, Task2 Test Acc=0.5703
+********** Subject <built-in function all> - Epoch 103 **********
+Train Loss=92.3527
+Task1 Train Acc=0.9716, Task2 Train Acc=0.8462
+Task1 Test Acc=0.8561, Task2 Test Acc=0.6256
+********** Subject <built-in function all> - Epoch 104 **********
+Train Loss=97.6088
+Task1 Train Acc=0.9705, Task2 Train Acc=0.8369
+Task1 Test Acc=0.8839, Task2 Test Acc=0.6115
+********** Subject <built-in function all> - Epoch 105 **********
+Train Loss=87.8724
+Task1 Train Acc=0.9767, Task2 Train Acc=0.8438
+Task1 Test Acc=0.8762, Task2 Test Acc=0.5979
+********** Subject <built-in function all> - Epoch 106 **********
+Train Loss=100.1710
+Task1 Train Acc=0.9705, Task2 Train Acc=0.8401
+Task1 Test Acc=0.8764, Task2 Test Acc=0.5871
+********** Subject <built-in function all> - Epoch 107 **********
+Train Loss=96.4760
+Task1 Train Acc=0.9726, Task2 Train Acc=0.8345
+Task1 Test Acc=0.8758, Task2 Test Acc=0.5775
+********** Subject <built-in function all> - Epoch 108 **********
+Train Loss=98.8529
+Task1 Train Acc=0.9726, Task2 Train Acc=0.8377
+Task1 Test Acc=0.8603, Task2 Test Acc=0.6272
+********** Subject <built-in function all> - Epoch 109 **********
+Train Loss=96.3675
+Task1 Train Acc=0.9757, Task2 Train Acc=0.8365
+Task1 Test Acc=0.8702, Task2 Test Acc=0.5839
+********** Subject <built-in function all> - Epoch 110 **********
+Train Loss=93.9393
+Task1 Train Acc=0.9724, Task2 Train Acc=0.8397
+Task1 Test Acc=0.8767, Task2 Test Acc=0.6119
+********** Subject <built-in function all> - Epoch 111 **********
+Train Loss=95.6764
+Task1 Train Acc=0.9728, Task2 Train Acc=0.8317
+Task1 Test Acc=0.8594, Task2 Test Acc=0.5979
+********** Subject <built-in function all> - Epoch 112 **********
+Train Loss=89.9488
+Task1 Train Acc=0.9726, Task2 Train Acc=0.8547
+Task1 Test Acc=0.8557, Task2 Test Acc=0.6227
+********** Subject <built-in function all> - Epoch 113 **********
+Train Loss=88.4235
+Task1 Train Acc=0.9724, Task2 Train Acc=0.8470
+Task1 Test Acc=0.8740, Task2 Test Acc=0.6155
+********** Subject <built-in function all> - Epoch 114 **********
+Train Loss=91.9608
+Task1 Train Acc=0.9753, Task2 Train Acc=0.8466
+Task1 Test Acc=0.8777, Task2 Test Acc=0.6115
+********** Subject <built-in function all> - Epoch 115 **********
+Train Loss=92.7078
+Task1 Train Acc=0.9740, Task2 Train Acc=0.8377
+Task1 Test Acc=0.8669, Task2 Test Acc=0.5991
+********** Subject <built-in function all> - Epoch 116 **********
+Train Loss=89.5031
+Task1 Train Acc=0.9772, Task2 Train Acc=0.8389
+Task1 Test Acc=0.8827, Task2 Test Acc=0.5847
+********** Subject <built-in function all> - Epoch 117 **********
+Train Loss=85.2524
+Task1 Train Acc=0.9763, Task2 Train Acc=0.8514
+Task1 Test Acc=0.8754, Task2 Test Acc=0.6111
+********** Subject <built-in function all> - Epoch 118 **********
+Train Loss=89.8642
+Task1 Train Acc=0.9753, Task2 Train Acc=0.8397
+Task1 Test Acc=0.8841, Task2 Test Acc=0.6171
+********** Subject <built-in function all> - Epoch 119 **********
+Train Loss=83.8981
+Task1 Train Acc=0.9770, Task2 Train Acc=0.8599
+Task1 Test Acc=0.8630, Task2 Test Acc=0.6023
+********** Subject <built-in function all> - Epoch 120 **********
+Train Loss=90.2531
+Task1 Train Acc=0.9769, Task2 Train Acc=0.8474
+Task1 Test Acc=0.8634, Task2 Test Acc=0.5975
+********** Subject <built-in function all> - Epoch 121 **********
+Train Loss=86.2697
+Task1 Train Acc=0.9761, Task2 Train Acc=0.8522
+Task1 Test Acc=0.8736, Task2 Test Acc=0.6015
+********** Subject <built-in function all> - Epoch 122 **********
+Train Loss=88.1740
+Task1 Train Acc=0.9765, Task2 Train Acc=0.8474
+Task1 Test Acc=0.8736, Task2 Test Acc=0.6067
+********** Subject <built-in function all> - Epoch 123 **********
+Train Loss=87.6131
+Task1 Train Acc=0.9757, Task2 Train Acc=0.8462
+Task1 Test Acc=0.8555, Task2 Test Acc=0.5995
+********** Subject <built-in function all> - Epoch 124 **********
+Train Loss=90.2710
+Task1 Train Acc=0.9759, Task2 Train Acc=0.8434
+Task1 Test Acc=0.8682, Task2 Test Acc=0.5903
+********** Subject <built-in function all> - Epoch 125 **********
+Train Loss=84.9957
+Task1 Train Acc=0.9778, Task2 Train Acc=0.8510
+Task1 Test Acc=0.8669, Task2 Test Acc=0.6003
+********** Subject <built-in function all> - Epoch 126 **********
+Train Loss=87.6112
+Task1 Train Acc=0.9749, Task2 Train Acc=0.8494
+Task1 Test Acc=0.8725, Task2 Test Acc=0.5907
+********** Subject <built-in function all> - Epoch 127 **********
+Train Loss=86.8513
+Task1 Train Acc=0.9755, Task2 Train Acc=0.8555
+Task1 Test Acc=0.8549, Task2 Test Acc=0.5967
+********** Subject <built-in function all> - Epoch 128 **********
+Train Loss=84.0561
+Task1 Train Acc=0.9780, Task2 Train Acc=0.8494
+Task1 Test Acc=0.8347, Task2 Test Acc=0.6055
+********** Subject <built-in function all> - Epoch 129 **********
+Train Loss=88.9783
+Task1 Train Acc=0.9726, Task2 Train Acc=0.8518
+Task1 Test Acc=0.8634, Task2 Test Acc=0.5923
+********** Subject <built-in function all> - Epoch 130 **********
+Train Loss=85.4209
+Task1 Train Acc=0.9732, Task2 Train Acc=0.8587
+Task1 Test Acc=0.8601, Task2 Test Acc=0.6031
+********** Subject <built-in function all> - Epoch 131 **********
+Train Loss=86.4999
+Task1 Train Acc=0.9736, Task2 Train Acc=0.8551
+Task1 Test Acc=0.8372, Task2 Test Acc=0.6215
+********** Subject <built-in function all> - Epoch 132 **********
+Train Loss=87.4200
+Task1 Train Acc=0.9757, Task2 Train Acc=0.8579
+Task1 Test Acc=0.8617, Task2 Test Acc=0.6107
+********** Subject <built-in function all> - Epoch 133 **********
+Train Loss=83.7720
+Task1 Train Acc=0.9782, Task2 Train Acc=0.8603
+Task1 Test Acc=0.8729, Task2 Test Acc=0.6143
+********** Subject <built-in function all> - Epoch 134 **********
+Train Loss=81.0410
+Task1 Train Acc=0.9784, Task2 Train Acc=0.8595
+Task1 Test Acc=0.8754, Task2 Test Acc=0.5939
+********** Subject <built-in function all> - Epoch 135 **********
+Train Loss=82.0775
+Task1 Train Acc=0.9759, Task2 Train Acc=0.8623
+Task1 Test Acc=0.8638, Task2 Test Acc=0.6288
+********** Subject <built-in function all> - Epoch 136 **********
+Train Loss=81.2064
+Task1 Train Acc=0.9780, Task2 Train Acc=0.8684
+Task1 Test Acc=0.8756, Task2 Test Acc=0.6067
+********** Subject <built-in function all> - Epoch 137 **********
+Train Loss=86.0636
+Task1 Train Acc=0.9755, Task2 Train Acc=0.8547
+Task1 Test Acc=0.8733, Task2 Test Acc=0.5959
+********** Subject <built-in function all> - Epoch 138 **********
+Train Loss=86.8881
+Task1 Train Acc=0.9755, Task2 Train Acc=0.8518
+Task1 Test Acc=0.8555, Task2 Test Acc=0.5991
+********** Subject <built-in function all> - Epoch 139 **********
+Train Loss=84.5487
+Task1 Train Acc=0.9790, Task2 Train Acc=0.8547
+Task1 Test Acc=0.8877, Task2 Test Acc=0.6071
+********** Subject <built-in function all> - Epoch 140 **********
+Train Loss=78.7479
+Task1 Train Acc=0.9770, Task2 Train Acc=0.8644
+Task1 Test Acc=0.8835, Task2 Test Acc=0.5715
+********** Subject <built-in function all> - Epoch 141 **********
+Train Loss=82.6385
+Task1 Train Acc=0.9757, Task2 Train Acc=0.8652
+Task1 Test Acc=0.8785, Task2 Test Acc=0.6211
+********** Subject <built-in function all> - Epoch 142 **********
+Train Loss=78.8460
+Task1 Train Acc=0.9809, Task2 Train Acc=0.8579
+Task1 Test Acc=0.8700, Task2 Test Acc=0.6159
+********** Subject <built-in function all> - Epoch 143 **********
+Train Loss=77.2251
+Task1 Train Acc=0.9807, Task2 Train Acc=0.8627
+Task1 Test Acc=0.8771, Task2 Test Acc=0.6127
+********** Subject <built-in function all> - Epoch 144 **********
+Train Loss=81.2818
+Task1 Train Acc=0.9805, Task2 Train Acc=0.8668
+Task1 Test Acc=0.8696, Task2 Test Acc=0.6099
+********** Subject <built-in function all> - Epoch 145 **********
+Train Loss=77.5458
+Task1 Train Acc=0.9774, Task2 Train Acc=0.8712
+Task1 Test Acc=0.8682, Task2 Test Acc=0.6039
+********** Subject <built-in function all> - Epoch 146 **********
+Train Loss=80.6204
+Task1 Train Acc=0.9805, Task2 Train Acc=0.8583
+Task1 Test Acc=0.8353, Task2 Test Acc=0.6015
+********** Subject <built-in function all> - Epoch 147 **********
+Train Loss=80.1726
+Task1 Train Acc=0.9780, Task2 Train Acc=0.8668
+Task1 Test Acc=0.8725, Task2 Test Acc=0.5999
+********** Subject <built-in function all> - Epoch 148 **********
+Train Loss=73.3664
+Task1 Train Acc=0.9796, Task2 Train Acc=0.8724
+Task1 Test Acc=0.8640, Task2 Test Acc=0.5675
+********** Subject <built-in function all> - Epoch 149 **********
+Train Loss=75.8714
+Task1 Train Acc=0.9772, Task2 Train Acc=0.8700
+Task1 Test Acc=0.8860, Task2 Test Acc=0.6151
+********** Subject <built-in function all> - Epoch 150 **********
+Train Loss=76.0421
+Task1 Train Acc=0.9784, Task2 Train Acc=0.8688
+Task1 Test Acc=0.8638, Task2 Test Acc=0.6131
+********** Subject <built-in function all> - Epoch 151 **********
+Train Loss=78.5752
+Task1 Train Acc=0.9815, Task2 Train Acc=0.8530
+Task1 Test Acc=0.8756, Task2 Test Acc=0.5999
+********** Subject <built-in function all> - Epoch 152 **********
+Train Loss=73.0350
+Task1 Train Acc=0.9782, Task2 Train Acc=0.8720
+Task1 Test Acc=0.8742, Task2 Test Acc=0.5991
+********** Subject <built-in function all> - Epoch 153 **********
+Train Loss=77.0094
+Task1 Train Acc=0.9801, Task2 Train Acc=0.8599
+Task1 Test Acc=0.8700, Task2 Test Acc=0.5851
+********** Subject <built-in function all> - Epoch 154 **********
+Train Loss=77.5574
+Task1 Train Acc=0.9774, Task2 Train Acc=0.8769
+Task1 Test Acc=0.8598, Task2 Test Acc=0.5983
+********** Subject <built-in function all> - Epoch 155 **********
+Train Loss=74.2689
+Task1 Train Acc=0.9786, Task2 Train Acc=0.8740
+Task1 Test Acc=0.8596, Task2 Test Acc=0.6179
+********** Subject <built-in function all> - Epoch 156 **********
+Train Loss=69.0880
+Task1 Train Acc=0.9815, Task2 Train Acc=0.8837
+Task1 Test Acc=0.8746, Task2 Test Acc=0.5939
+********** Subject <built-in function all> - Epoch 157 **********
+Train Loss=75.7532
+Task1 Train Acc=0.9788, Task2 Train Acc=0.8684
+Task1 Test Acc=0.8814, Task2 Test Acc=0.6087
+********** Subject <built-in function all> - Epoch 158 **********
+Train Loss=74.3103
+Task1 Train Acc=0.9817, Task2 Train Acc=0.8724
+Task1 Test Acc=0.8875, Task2 Test Acc=0.6079
+********** Subject <built-in function all> - Epoch 159 **********
+Train Loss=77.0430
+Task1 Train Acc=0.9809, Task2 Train Acc=0.8748
+Task1 Test Acc=0.8719, Task2 Test Acc=0.6031
+********** Subject <built-in function all> - Epoch 160 **********
+Train Loss=74.2122
+Task1 Train Acc=0.9799, Task2 Train Acc=0.8761
+Task1 Test Acc=0.8729, Task2 Test Acc=0.6019
+********** Subject <built-in function all> - Epoch 161 **********
+Train Loss=72.1174
+Task1 Train Acc=0.9784, Task2 Train Acc=0.8785
+Task1 Test Acc=0.8547, Task2 Test Acc=0.5887
+********** Subject <built-in function all> - Epoch 162 **********
+Train Loss=69.5540
+Task1 Train Acc=0.9803, Task2 Train Acc=0.8821
+Task1 Test Acc=0.8694, Task2 Test Acc=0.6003
+********** Subject <built-in function all> - Epoch 163 **********
+Train Loss=69.4155
+Task1 Train Acc=0.9803, Task2 Train Acc=0.8898
+Task1 Test Acc=0.8686, Task2 Test Acc=0.5851
+********** Subject <built-in function all> - Epoch 164 **********
+Train Loss=71.6531
+Task1 Train Acc=0.9807, Task2 Train Acc=0.8753
+Task1 Test Acc=0.8520, Task2 Test Acc=0.6304
+********** Subject <built-in function all> - Epoch 165 **********
+Train Loss=70.7187
+Task1 Train Acc=0.9815, Task2 Train Acc=0.8753
+Task1 Test Acc=0.8630, Task2 Test Acc=0.6199
+********** Subject <built-in function all> - Epoch 166 **********
+Train Loss=71.5685
+Task1 Train Acc=0.9807, Task2 Train Acc=0.8748
+Task1 Test Acc=0.8447, Task2 Test Acc=0.6151
+********** Subject <built-in function all> - Epoch 167 **********
+Train Loss=74.7345
+Task1 Train Acc=0.9786, Task2 Train Acc=0.8748
+Task1 Test Acc=0.8806, Task2 Test Acc=0.6131
+********** Subject <built-in function all> - Epoch 168 **********
+Train Loss=76.1467
+Task1 Train Acc=0.9784, Task2 Train Acc=0.8680
+Task1 Test Acc=0.8719, Task2 Test Acc=0.6083
+********** Subject <built-in function all> - Epoch 169 **********
+Train Loss=73.1692
+Task1 Train Acc=0.9794, Task2 Train Acc=0.8805
+Task1 Test Acc=0.8702, Task2 Test Acc=0.6059
+********** Subject <built-in function all> - Epoch 170 **********
+Train Loss=70.1377
+Task1 Train Acc=0.9823, Task2 Train Acc=0.8821
+Task1 Test Acc=0.8692, Task2 Test Acc=0.6276
+********** Subject <built-in function all> - Epoch 171 **********
+Train Loss=68.4869
+Task1 Train Acc=0.9811, Task2 Train Acc=0.8813
+Task1 Test Acc=0.8717, Task2 Test Acc=0.6099
+********** Subject <built-in function all> - Epoch 172 **********
+Train Loss=69.9865
+Task1 Train Acc=0.9809, Task2 Train Acc=0.8837
+Task1 Test Acc=0.8557, Task2 Test Acc=0.6091
+********** Subject <built-in function all> - Epoch 173 **********
+Train Loss=72.3174
+Task1 Train Acc=0.9807, Task2 Train Acc=0.8748
+Task1 Test Acc=0.8492, Task2 Test Acc=0.6115
+********** Subject <built-in function all> - Epoch 174 **********
+Train Loss=65.1262
+Task1 Train Acc=0.9836, Task2 Train Acc=0.8870
+Task1 Test Acc=0.8632, Task2 Test Acc=0.6099
+********** Subject <built-in function all> - Epoch 175 **********
+Train Loss=68.5768
+Task1 Train Acc=0.9832, Task2 Train Acc=0.8789
+Task1 Test Acc=0.8682, Task2 Test Acc=0.6095
+********** Subject <built-in function all> - Epoch 176 **********
+Train Loss=70.3362
+Task1 Train Acc=0.9813, Task2 Train Acc=0.8837
+Task1 Test Acc=0.8746, Task2 Test Acc=0.6268
+********** Subject <built-in function all> - Epoch 177 **********
+Train Loss=69.3076
+Task1 Train Acc=0.9824, Task2 Train Acc=0.8890
+Task1 Test Acc=0.8675, Task2 Test Acc=0.5907
+********** Subject <built-in function all> - Epoch 178 **********
+Train Loss=64.2408
+Task1 Train Acc=0.9850, Task2 Train Acc=0.8910
+Task1 Test Acc=0.8812, Task2 Test Acc=0.6015
+********** Subject <built-in function all> - Epoch 179 **********
+Train Loss=69.9760
+Task1 Train Acc=0.9807, Task2 Train Acc=0.8777
+Task1 Test Acc=0.8837, Task2 Test Acc=0.6195
+********** Subject <built-in function all> - Epoch 180 **********
+Train Loss=68.0163
+Task1 Train Acc=0.9821, Task2 Train Acc=0.8874
+Task1 Test Acc=0.8787, Task2 Test Acc=0.6368
+********** Subject <built-in function all> - Epoch 181 **********
+Train Loss=64.6711
+Task1 Train Acc=0.9838, Task2 Train Acc=0.8837
+Task1 Test Acc=0.8764, Task2 Test Acc=0.6227
+********** Subject <built-in function all> - Epoch 182 **********
+Train Loss=65.8869
+Task1 Train Acc=0.9855, Task2 Train Acc=0.8866
+Task1 Test Acc=0.8756, Task2 Test Acc=0.5975
+********** Subject <built-in function all> - Epoch 183 **********
+Train Loss=65.6180
+Task1 Train Acc=0.9805, Task2 Train Acc=0.8910
+Task1 Test Acc=0.8632, Task2 Test Acc=0.6091
+********** Subject <built-in function all> - Epoch 184 **********
+Train Loss=67.2167
+Task1 Train Acc=0.9817, Task2 Train Acc=0.8845
+Task1 Test Acc=0.8719, Task2 Test Acc=0.6015
+********** Subject <built-in function all> - Epoch 185 **********
+Train Loss=65.9451
+Task1 Train Acc=0.9826, Task2 Train Acc=0.8886
+Task1 Test Acc=0.8634, Task2 Test Acc=0.6211
+********** Subject <built-in function all> - Epoch 186 **********
+Train Loss=66.2703
+Task1 Train Acc=0.9832, Task2 Train Acc=0.8841
+Task1 Test Acc=0.8729, Task2 Test Acc=0.6171
+********** Subject <built-in function all> - Epoch 187 **********
+Train Loss=66.0097
+Task1 Train Acc=0.9826, Task2 Train Acc=0.8918
+Task1 Test Acc=0.8686, Task2 Test Acc=0.5999
+********** Subject <built-in function all> - Epoch 188 **********
+Train Loss=67.6565
+Task1 Train Acc=0.9823, Task2 Train Acc=0.8886
+Task1 Test Acc=0.8725, Task2 Test Acc=0.6127
+********** Subject <built-in function all> - Epoch 189 **********
+Train Loss=63.6048
+Task1 Train Acc=0.9842, Task2 Train Acc=0.8914
+Task1 Test Acc=0.8709, Task2 Test Acc=0.6151
+********** Subject <built-in function all> - Epoch 190 **********
+Train Loss=67.0397
+Task1 Train Acc=0.9805, Task2 Train Acc=0.8938
+Task1 Test Acc=0.8792, Task2 Test Acc=0.5991
+********** Subject <built-in function all> - Epoch 191 **********
+Train Loss=62.4475
+Task1 Train Acc=0.9828, Task2 Train Acc=0.8930
+Task1 Test Acc=0.8673, Task2 Test Acc=0.6376
+********** Subject <built-in function all> - Epoch 192 **********
+Train Loss=70.5361
+Task1 Train Acc=0.9790, Task2 Train Acc=0.8906
+Task1 Test Acc=0.8630, Task2 Test Acc=0.6312
+********** Subject <built-in function all> - Epoch 193 **********
+Train Loss=67.4862
+Task1 Train Acc=0.9796, Task2 Train Acc=0.8910
+Task1 Test Acc=0.8669, Task2 Test Acc=0.5939
+********** Subject <built-in function all> - Epoch 194 **********
+Train Loss=61.6429
+Task1 Train Acc=0.9838, Task2 Train Acc=0.8987
+Task1 Test Acc=0.8762, Task2 Test Acc=0.6071
+********** Subject <built-in function all> - Epoch 195 **********
+Train Loss=63.4452
+Task1 Train Acc=0.9809, Task2 Train Acc=0.8930
+Task1 Test Acc=0.8750, Task2 Test Acc=0.6143
+********** Subject <built-in function all> - Epoch 196 **********
+Train Loss=60.8154
+Task1 Train Acc=0.9826, Task2 Train Acc=0.8934
+Task1 Test Acc=0.8754, Task2 Test Acc=0.6031
+********** Subject <built-in function all> - Epoch 197 **********
+Train Loss=58.7928
+Task1 Train Acc=0.9869, Task2 Train Acc=0.8950
+Task1 Test Acc=0.8621, Task2 Test Acc=0.6103
+********** Subject <built-in function all> - Epoch 198 **********
+Train Loss=63.2422
+Task1 Train Acc=0.9828, Task2 Train Acc=0.8979
+Task1 Test Acc=0.8781, Task2 Test Acc=0.6211
+********** Subject <built-in function all> - Epoch 199 **********
+Train Loss=60.3943
+Task1 Train Acc=0.9813, Task2 Train Acc=0.9039
+Task1 Test Acc=0.8733, Task2 Test Acc=0.5975
+********** Subject <built-in function all> - Epoch 200 **********
+Train Loss=60.9570
+Task1 Train Acc=0.9823, Task2 Train Acc=0.8946
+Task1 Test Acc=0.8590, Task2 Test Acc=0.6091
+********** Subject <built-in function all> - Epoch 201 **********
+Train Loss=65.4128
+Task1 Train Acc=0.9815, Task2 Train Acc=0.8918
+Task1 Test Acc=0.8773, Task2 Test Acc=0.6011
+********** Subject <built-in function all> - Epoch 202 **********
+Train Loss=68.7473
+Task1 Train Acc=0.9805, Task2 Train Acc=0.8975
+Task1 Test Acc=0.8762, Task2 Test Acc=0.6163
+********** Subject <built-in function all> - Epoch 203 **********
+Train Loss=62.5345
+Task1 Train Acc=0.9855, Task2 Train Acc=0.8918
+Task1 Test Acc=0.8713, Task2 Test Acc=0.6131
+********** Subject <built-in function all> - Epoch 204 **********
+Train Loss=63.6616
+Task1 Train Acc=0.9803, Task2 Train Acc=0.8971
+Task1 Test Acc=0.8711, Task2 Test Acc=0.6187
+********** Subject <built-in function all> - Epoch 205 **********
+Train Loss=61.4995
+Task1 Train Acc=0.9850, Task2 Train Acc=0.8930
+Task1 Test Acc=0.8715, Task2 Test Acc=0.5891
+********** Subject <built-in function all> - Epoch 206 **********
+Train Loss=59.0294
+Task1 Train Acc=0.9840, Task2 Train Acc=0.8991
+Task1 Test Acc=0.8561, Task2 Test Acc=0.6075
+********** Subject <built-in function all> - Epoch 207 **********
+Train Loss=65.0256
+Task1 Train Acc=0.9823, Task2 Train Acc=0.8882
+Task1 Test Acc=0.8777, Task2 Test Acc=0.6123
+********** Subject <built-in function all> - Epoch 208 **********
+Train Loss=60.9811
+Task1 Train Acc=0.9842, Task2 Train Acc=0.9027
+Task1 Test Acc=0.8804, Task2 Test Acc=0.6127
+********** Subject <built-in function all> - Epoch 209 **********
+Train Loss=58.3365
+Task1 Train Acc=0.9844, Task2 Train Acc=0.9075
+Task1 Test Acc=0.8623, Task2 Test Acc=0.6215
+********** Subject <built-in function all> - Epoch 210 **********
+Train Loss=56.2880
+Task1 Train Acc=0.9846, Task2 Train Acc=0.9080
+Task1 Test Acc=0.8698, Task2 Test Acc=0.5995
+********** Subject <built-in function all> - Epoch 211 **********
+Train Loss=60.9848
+Task1 Train Acc=0.9834, Task2 Train Acc=0.8962
+Task1 Test Acc=0.8713, Task2 Test Acc=0.6264
+********** Subject <built-in function all> - Epoch 212 **********
+Train Loss=60.2729
+Task1 Train Acc=0.9828, Task2 Train Acc=0.8975
+Task1 Test Acc=0.8725, Task2 Test Acc=0.6047
+********** Subject <built-in function all> - Epoch 213 **********
+Train Loss=58.3657
+Task1 Train Acc=0.9850, Task2 Train Acc=0.9080
+Task1 Test Acc=0.8752, Task2 Test Acc=0.6252
+********** Subject <built-in function all> - Epoch 214 **********
+Train Loss=58.1899
+Task1 Train Acc=0.9855, Task2 Train Acc=0.8979
+Task1 Test Acc=0.8862, Task2 Test Acc=0.6316
+********** Subject <built-in function all> - Epoch 215 **********
+Train Loss=56.2361
+Task1 Train Acc=0.9836, Task2 Train Acc=0.9108
+Task1 Test Acc=0.8821, Task2 Test Acc=0.6123
+********** Subject <built-in function all> - Epoch 216 **********
+Train Loss=63.3985
+Task1 Train Acc=0.9836, Task2 Train Acc=0.8914
+Task1 Test Acc=0.8754, Task2 Test Acc=0.6276
+********** Subject <built-in function all> - Epoch 217 **********
+Train Loss=58.6436
+Task1 Train Acc=0.9830, Task2 Train Acc=0.9027
+Task1 Test Acc=0.8875, Task2 Test Acc=0.6179
+********** Subject <built-in function all> - Epoch 218 **********
+Train Loss=54.7556
+Task1 Train Acc=0.9861, Task2 Train Acc=0.9031
+Task1 Test Acc=0.8796, Task2 Test Acc=0.6155
+********** Subject <built-in function all> - Epoch 219 **********
+Train Loss=50.3148
+Task1 Train Acc=0.9844, Task2 Train Acc=0.9124
+Task1 Test Acc=0.8783, Task2 Test Acc=0.6215
+********** Subject <built-in function all> - Epoch 220 **********
+Train Loss=54.1380
+Task1 Train Acc=0.9828, Task2 Train Acc=0.9067
+Task1 Test Acc=0.8806, Task2 Test Acc=0.6312
+********** Subject <built-in function all> - Epoch 221 **********
+Train Loss=55.0272
+Task1 Train Acc=0.9859, Task2 Train Acc=0.9084
+Task1 Test Acc=0.8789, Task2 Test Acc=0.6171
+********** Subject <built-in function all> - Epoch 222 **********
+Train Loss=57.7562
+Task1 Train Acc=0.9859, Task2 Train Acc=0.8995
+Task1 Test Acc=0.8711, Task2 Test Acc=0.6296
+********** Subject <built-in function all> - Epoch 223 **********
+Train Loss=62.4026
+Task1 Train Acc=0.9815, Task2 Train Acc=0.9092
+Task1 Test Acc=0.8694, Task2 Test Acc=0.6167
+********** Subject <built-in function all> - Epoch 224 **********
+Train Loss=57.1807
+Task1 Train Acc=0.9855, Task2 Train Acc=0.9003
+Task1 Test Acc=0.8704, Task2 Test Acc=0.6195
+********** Subject <built-in function all> - Epoch 225 **********
+Train Loss=48.5490
+Task1 Train Acc=0.9869, Task2 Train Acc=0.9193
+Task1 Test Acc=0.8715, Task2 Test Acc=0.6043
+********** Subject <built-in function all> - Epoch 226 **********
+Train Loss=52.6379
+Task1 Train Acc=0.9836, Task2 Train Acc=0.9088
+Task1 Test Acc=0.8798, Task2 Test Acc=0.6268
+********** Subject <built-in function all> - Epoch 227 **********
+Train Loss=56.1480
+Task1 Train Acc=0.9851, Task2 Train Acc=0.9144
+Task1 Test Acc=0.8673, Task2 Test Acc=0.6091
+********** Subject <built-in function all> - Epoch 228 **********
+Train Loss=51.9313
+Task1 Train Acc=0.9855, Task2 Train Acc=0.9104
+Task1 Test Acc=0.8738, Task2 Test Acc=0.6159
+********** Subject <built-in function all> - Epoch 229 **********
+Train Loss=51.1596
+Task1 Train Acc=0.9861, Task2 Train Acc=0.9180
+Task1 Test Acc=0.8679, Task2 Test Acc=0.6131
+********** Subject <built-in function all> - Epoch 230 **********
+Train Loss=55.6056
+Task1 Train Acc=0.9865, Task2 Train Acc=0.9063
+Task1 Test Acc=0.8582, Task2 Test Acc=0.6027
+********** Subject <built-in function all> - Epoch 231 **********
+Train Loss=48.9030
+Task1 Train Acc=0.9851, Task2 Train Acc=0.9180
+Task1 Test Acc=0.8760, Task2 Test Acc=0.6099
+********** Subject <built-in function all> - Epoch 232 **********
+Train Loss=51.0927
+Task1 Train Acc=0.9871, Task2 Train Acc=0.9084
+Task1 Test Acc=0.8721, Task2 Test Acc=0.6003
+********** Subject <built-in function all> - Epoch 233 **********
+Train Loss=57.4104
+Task1 Train Acc=0.9834, Task2 Train Acc=0.9092
+Task1 Test Acc=0.8634, Task2 Test Acc=0.6247
+********** Subject <built-in function all> - Epoch 234 **********
+Train Loss=57.4184
+Task1 Train Acc=0.9857, Task2 Train Acc=0.9104
+Task1 Test Acc=0.8696, Task2 Test Acc=0.6235
+********** Subject <built-in function all> - Epoch 235 **********
+Train Loss=51.9931
+Task1 Train Acc=0.9846, Task2 Train Acc=0.9205
+Task1 Test Acc=0.8893, Task2 Test Acc=0.6111
+********** Subject <built-in function all> - Epoch 236 **********
+Train Loss=50.4910
+Task1 Train Acc=0.9850, Task2 Train Acc=0.9197
+Task1 Test Acc=0.8632, Task2 Test Acc=0.6300
+********** Subject <built-in function all> - Epoch 237 **********
+Train Loss=55.4816
+Task1 Train Acc=0.9871, Task2 Train Acc=0.8987
+Task1 Test Acc=0.8709, Task2 Test Acc=0.6103
+********** Subject <built-in function all> - Epoch 238 **********
+Train Loss=50.8072
+Task1 Train Acc=0.9869, Task2 Train Acc=0.9160
+Task1 Test Acc=0.8748, Task2 Test Acc=0.6187
+********** Subject <built-in function all> - Epoch 239 **********
+Train Loss=50.3666
+Task1 Train Acc=0.9886, Task2 Train Acc=0.9128
+Task1 Test Acc=0.8698, Task2 Test Acc=0.6195
+********** Subject <built-in function all> - Epoch 240 **********
+Train Loss=52.6252
+Task1 Train Acc=0.9875, Task2 Train Acc=0.9168
+Task1 Test Acc=0.8684, Task2 Test Acc=0.6211
+********** Subject <built-in function all> - Epoch 241 **********
+Train Loss=49.9797
+Task1 Train Acc=0.9878, Task2 Train Acc=0.9168
+Task1 Test Acc=0.8696, Task2 Test Acc=0.6368
+********** Subject <built-in function all> - Epoch 242 **********
+Train Loss=52.4696
+Task1 Train Acc=0.9838, Task2 Train Acc=0.9136
+Task1 Test Acc=0.8708, Task2 Test Acc=0.6235
+********** Subject <built-in function all> - Epoch 243 **********
+Train Loss=55.2119
+Task1 Train Acc=0.9838, Task2 Train Acc=0.9156
+Task1 Test Acc=0.8831, Task2 Test Acc=0.6095
+********** Subject <built-in function all> - Epoch 244 **********
+Train Loss=53.3786
+Task1 Train Acc=0.9857, Task2 Train Acc=0.9205
+Task1 Test Acc=0.8750, Task2 Test Acc=0.6083
+********** Subject <built-in function all> - Epoch 245 **********
+Train Loss=50.1798
+Task1 Train Acc=0.9848, Task2 Train Acc=0.9213
+Task1 Test Acc=0.8789, Task2 Test Acc=0.6231
+********** Subject <built-in function all> - Epoch 246 **********
+Train Loss=59.9785
+Task1 Train Acc=0.9863, Task2 Train Acc=0.8991
+Task1 Test Acc=0.8767, Task2 Test Acc=0.6043
+********** Subject <built-in function all> - Epoch 247 **********
+Train Loss=55.9361
+Task1 Train Acc=0.9855, Task2 Train Acc=0.9092
+Task1 Test Acc=0.8706, Task2 Test Acc=0.6231
+********** Subject <built-in function all> - Epoch 248 **********
+Train Loss=53.2070
+Task1 Train Acc=0.9865, Task2 Train Acc=0.9156
+Task1 Test Acc=0.8709, Task2 Test Acc=0.6127
+********** Subject <built-in function all> - Epoch 249 **********
+Train Loss=50.9434
+Task1 Train Acc=0.9861, Task2 Train Acc=0.9035
+Task1 Test Acc=0.8709, Task2 Test Acc=0.6252
+********** Subject <built-in function all> - Epoch 250 **********
+Train Loss=51.1123
+Task1 Train Acc=0.9888, Task2 Train Acc=0.9071
+Task1 Test Acc=0.8733, Task2 Test Acc=0.6235
+********** Subject <built-in function all> - Epoch 251 **********
+Train Loss=47.9705
+Task1 Train Acc=0.9859, Task2 Train Acc=0.9201
+Task1 Test Acc=0.8736, Task2 Test Acc=0.6203
+********** Subject <built-in function all> - Epoch 252 **********
+Train Loss=48.2444
+Task1 Train Acc=0.9882, Task2 Train Acc=0.9281
+Task1 Test Acc=0.8773, Task2 Test Acc=0.6247
+********** Subject <built-in function all> - Epoch 253 **********
+Train Loss=54.6263
+Task1 Train Acc=0.9859, Task2 Train Acc=0.9164
+Task1 Test Acc=0.8769, Task2 Test Acc=0.6115
+********** Subject <built-in function all> - Epoch 254 **********
+Train Loss=49.9204
+Task1 Train Acc=0.9884, Task2 Train Acc=0.9144
+Task1 Test Acc=0.8796, Task2 Test Acc=0.6344
+********** Subject <built-in function all> - Epoch 255 **********
+Train Loss=50.5606
+Task1 Train Acc=0.9896, Task2 Train Acc=0.9201
+Task1 Test Acc=0.8804, Task2 Test Acc=0.6223
+********** Subject <built-in function all> - Epoch 256 **********
+Train Loss=52.3172
+Task1 Train Acc=0.9848, Task2 Train Acc=0.9092
+Task1 Test Acc=0.8723, Task2 Test Acc=0.6163
+********** Subject <built-in function all> - Epoch 257 **********
+Train Loss=52.1035
+Task1 Train Acc=0.9878, Task2 Train Acc=0.9096
+Task1 Test Acc=0.8785, Task2 Test Acc=0.6300
+********** Subject <built-in function all> - Epoch 258 **********
+Train Loss=47.1142
+Task1 Train Acc=0.9865, Task2 Train Acc=0.9233
+Task1 Test Acc=0.8762, Task2 Test Acc=0.6087
+********** Subject <built-in function all> - Epoch 259 **********
+Train Loss=47.4823
+Task1 Train Acc=0.9890, Task2 Train Acc=0.9201
+Task1 Test Acc=0.8794, Task2 Test Acc=0.6139
+********** Subject <built-in function all> - Epoch 260 **********
+Train Loss=50.4223
+Task1 Train Acc=0.9896, Task2 Train Acc=0.9116
+Task1 Test Acc=0.8773, Task2 Test Acc=0.6139
+********** Subject <built-in function all> - Epoch 261 **********
+Train Loss=52.7426
+Task1 Train Acc=0.9863, Task2 Train Acc=0.9172
+Task1 Test Acc=0.8758, Task2 Test Acc=0.6163
+********** Subject <built-in function all> - Epoch 262 **********
+Train Loss=49.4587
+Task1 Train Acc=0.9873, Task2 Train Acc=0.9116
+Task1 Test Acc=0.8752, Task2 Test Acc=0.6199
+********** Subject <built-in function all> - Epoch 263 **********
+Train Loss=45.7177
+Task1 Train Acc=0.9896, Task2 Train Acc=0.9217
+Task1 Test Acc=0.8827, Task2 Test Acc=0.6247
+********** Subject <built-in function all> - Epoch 264 **********
+Train Loss=50.3269
+Task1 Train Acc=0.9884, Task2 Train Acc=0.9120
+Task1 Test Acc=0.8829, Task2 Test Acc=0.6211
+********** Subject <built-in function all> - Epoch 265 **********
+Train Loss=49.5204
+Task1 Train Acc=0.9886, Task2 Train Acc=0.9209
+Task1 Test Acc=0.8746, Task2 Test Acc=0.6247
+********** Subject <built-in function all> - Epoch 266 **********
+Train Loss=48.7496
+Task1 Train Acc=0.9884, Task2 Train Acc=0.9176
+Task1 Test Acc=0.8775, Task2 Test Acc=0.6223
+********** Subject <built-in function all> - Epoch 267 **********
+Train Loss=49.0282
+Task1 Train Acc=0.9888, Task2 Train Acc=0.9156
+Task1 Test Acc=0.8719, Task2 Test Acc=0.6252
+********** Subject <built-in function all> - Epoch 268 **********
+Train Loss=49.1400
+Task1 Train Acc=0.9865, Task2 Train Acc=0.9229
+Task1 Test Acc=0.8764, Task2 Test Acc=0.6252
+********** Subject <built-in function all> - Epoch 269 **********
+Train Loss=50.5835
+Task1 Train Acc=0.9890, Task2 Train Acc=0.9063
+Task1 Test Acc=0.8681, Task2 Test Acc=0.6308
+********** Subject <built-in function all> - Epoch 270 **********
+Train Loss=47.3817
+Task1 Train Acc=0.9875, Task2 Train Acc=0.9172
+Task1 Test Acc=0.8675, Task2 Test Acc=0.6388
+********** Subject <built-in function all> - Epoch 271 **********
+Train Loss=44.1161
+Task1 Train Acc=0.9878, Task2 Train Acc=0.9237
+Task1 Test Acc=0.8814, Task2 Test Acc=0.6131
+********** Subject <built-in function all> - Epoch 272 **********
+Train Loss=49.3578
+Task1 Train Acc=0.9867, Task2 Train Acc=0.9213
+Task1 Test Acc=0.8754, Task2 Test Acc=0.6047
+********** Subject <built-in function all> - Epoch 273 **********
+Train Loss=45.1009
+Task1 Train Acc=0.9898, Task2 Train Acc=0.9237
+Task1 Test Acc=0.8843, Task2 Test Acc=0.6247
+********** Subject <built-in function all> - Epoch 274 **********
+Train Loss=45.6195
+Task1 Train Acc=0.9894, Task2 Train Acc=0.9253
+Task1 Test Acc=0.8827, Task2 Test Acc=0.6211
+********** Subject <built-in function all> - Epoch 275 **********
+Train Loss=48.2081
+Task1 Train Acc=0.9884, Task2 Train Acc=0.9184
+Task1 Test Acc=0.8769, Task2 Test Acc=0.5991
+********** Subject <built-in function all> - Epoch 276 **********
+Train Loss=47.2275
+Task1 Train Acc=0.9890, Task2 Train Acc=0.9120
+Task1 Test Acc=0.8779, Task2 Test Acc=0.6131
+********** Subject <built-in function all> - Epoch 277 **********
+Train Loss=52.2017
+Task1 Train Acc=0.9859, Task2 Train Acc=0.9160
+Task1 Test Acc=0.8800, Task2 Test Acc=0.6215
+********** Subject <built-in function all> - Epoch 278 **********
+Train Loss=43.9372
+Task1 Train Acc=0.9882, Task2 Train Acc=0.9277
+Task1 Test Acc=0.8777, Task2 Test Acc=0.6159
+********** Subject <built-in function all> - Epoch 279 **********
+Train Loss=42.7433
+Task1 Train Acc=0.9880, Task2 Train Acc=0.9285
+Task1 Test Acc=0.8725, Task2 Test Acc=0.6235
+********** Subject <built-in function all> - Epoch 280 **********
+Train Loss=48.8077
+Task1 Train Acc=0.9896, Task2 Train Acc=0.9184
+Task1 Test Acc=0.8841, Task2 Test Acc=0.6320
+********** Subject <built-in function all> - Epoch 281 **********
+Train Loss=50.0553
+Task1 Train Acc=0.9859, Task2 Train Acc=0.9193
+Task1 Test Acc=0.8769, Task2 Test Acc=0.6231
+********** Subject <built-in function all> - Epoch 282 **********
+Train Loss=46.7818
+Task1 Train Acc=0.9877, Task2 Train Acc=0.9261
+Task1 Test Acc=0.8735, Task2 Test Acc=0.6296
+********** Subject <built-in function all> - Epoch 283 **********
+Train Loss=48.2126
+Task1 Train Acc=0.9861, Task2 Train Acc=0.9289
+Task1 Test Acc=0.8794, Task2 Test Acc=0.6388
+********** Subject <built-in function all> - Epoch 284 **********
+Train Loss=53.0605
+Task1 Train Acc=0.9865, Task2 Train Acc=0.9197
+Task1 Test Acc=0.8794, Task2 Test Acc=0.6352
+********** Subject <built-in function all> - Epoch 285 **********
+Train Loss=46.7051
+Task1 Train Acc=0.9859, Task2 Train Acc=0.9197
+Task1 Test Acc=0.8750, Task2 Test Acc=0.6207
+********** Subject <built-in function all> - Epoch 286 **********
+Train Loss=49.5847
+Task1 Train Acc=0.9863, Task2 Train Acc=0.9156
+Task1 Test Acc=0.8804, Task2 Test Acc=0.6135
+********** Subject <built-in function all> - Epoch 287 **********
+Train Loss=40.3458
+Task1 Train Acc=0.9900, Task2 Train Acc=0.9394
+Task1 Test Acc=0.8696, Task2 Test Acc=0.6187
+********** Subject <built-in function all> - Epoch 288 **********
+Train Loss=52.5862
+Task1 Train Acc=0.9861, Task2 Train Acc=0.9225
+Task1 Test Acc=0.8767, Task2 Test Acc=0.6276
+********** Subject <built-in function all> - Epoch 289 **********
+Train Loss=48.7455
+Task1 Train Acc=0.9873, Task2 Train Acc=0.9180
+Task1 Test Acc=0.8742, Task2 Test Acc=0.6260
+********** Subject <built-in function all> - Epoch 290 **********
+Train Loss=44.9906
+Task1 Train Acc=0.9878, Task2 Train Acc=0.9314
+Task1 Test Acc=0.8789, Task2 Test Acc=0.6063
+********** Subject <built-in function all> - Epoch 291 **********
+Train Loss=43.7338
+Task1 Train Acc=0.9878, Task2 Train Acc=0.9294
+Task1 Test Acc=0.8692, Task2 Test Acc=0.6344
+********** Subject <built-in function all> - Epoch 292 **********
+Train Loss=47.8015
+Task1 Train Acc=0.9888, Task2 Train Acc=0.9225
+Task1 Test Acc=0.8738, Task2 Test Acc=0.6095
+********** Subject <built-in function all> - Epoch 293 **********
+Train Loss=42.8553
+Task1 Train Acc=0.9900, Task2 Train Acc=0.9265
+Task1 Test Acc=0.8721, Task2 Test Acc=0.6268
+********** Subject <built-in function all> - Epoch 294 **********
+Train Loss=48.1805
+Task1 Train Acc=0.9873, Task2 Train Acc=0.9112
+Task1 Test Acc=0.8744, Task2 Test Acc=0.6043
+********** Subject <built-in function all> - Epoch 295 **********
+Train Loss=47.9362
+Task1 Train Acc=0.9848, Task2 Train Acc=0.9306
+Task1 Test Acc=0.8783, Task2 Test Acc=0.6151
+********** Subject <built-in function all> - Epoch 296 **********
+Train Loss=48.7752
+Task1 Train Acc=0.9900, Task2 Train Acc=0.9197
+Task1 Test Acc=0.8682, Task2 Test Acc=0.6272
+********** Subject <built-in function all> - Epoch 297 **********
+Train Loss=48.4171
+Task1 Train Acc=0.9898, Task2 Train Acc=0.9128
+Task1 Test Acc=0.8765, Task2 Test Acc=0.6264
+********** Subject <built-in function all> - Epoch 298 **********
+Train Loss=46.6048
+Task1 Train Acc=0.9855, Task2 Train Acc=0.9314
+Task1 Test Acc=0.8738, Task2 Test Acc=0.6276
+********** Subject <built-in function all> - Epoch 299 **********
+Train Loss=40.6963
+Task1 Train Acc=0.9888, Task2 Train Acc=0.9326
+Task1 Test Acc=0.8692, Task2 Test Acc=0.6175
+********** Subject <built-in function all> - Epoch 300 **********
+Train Loss=44.6247
+Task1 Train Acc=0.9880, Task2 Train Acc=0.9306
+Task1 Test Acc=0.8756, Task2 Test Acc=0.6151
+
+Best Test Accuracy: 0.6388 at epoch 270

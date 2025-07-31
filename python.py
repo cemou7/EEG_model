@@ -1,0 +1,1 @@
+os.makedirs(log_dir, exist_ok=True)

@@ -1,0 +1,12 @@
+Subject: A01 | Final Train Acc: 0.9822 | Final Test Acc: 0.8112 | Best_test_acc: 0.8287| Best Epoch: 231
+Subject: A02 | Final Train Acc: 0.9929 | Final Test Acc: 0.5769 | Best_test_acc: 0.6014| Best Epoch: 132
+Subject: A03 | Final Train Acc: 0.9894 | Final Test Acc: 0.9176 | Best_test_acc: 0.9391| Best Epoch: 158
+Subject: A04 | Final Train Acc: 0.9856 | Final Test Acc: 0.6958 | Best_test_acc: 0.7300| Best Epoch: 221
+Subject: A05 | Final Train Acc: 0.9604 | Final Test Acc: 0.5548 | Best_test_acc: 0.5866| Best Epoch: 126
+Subject: A06 | Final Train Acc: 0.9692 | Final Test Acc: 0.5328 | Best_test_acc: 0.5598| Best Epoch: 246
+Subject: A07 | Final Train Acc: 0.9857 | Final Test Acc: 0.9014 | Best_test_acc: 0.9366| Best Epoch: 292
+Subject: A08 | Final Train Acc: 0.9928 | Final Test Acc: 0.8429 | Best_test_acc: 0.8679| Best Epoch: 135
+Subject: A09 | Final Train Acc: 0.9691 | Final Test Acc: 0.7545 | Best_test_acc: 0.7617| Best Epoch: 173
+--------------------------------------------------
+Average Test Accuracy across subjects on Supervised: 0.7569
+==================================================

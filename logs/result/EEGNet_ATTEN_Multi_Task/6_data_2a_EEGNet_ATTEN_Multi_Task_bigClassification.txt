@@ -1,0 +1,12 @@
+Subject: A01 | Train Task1 Acc: 0.9971 | Train Task2 Acc: 0.9858 | Final Test Task1 Acc: 0.8490 | Final Test Task2 Acc: 0.7238 | Best Task1 Test Acc: 0.7552 | Best Epoch: 209
+Subject: A02 | Train Task1 Acc: 0.9969 | Train Task2 Acc: 0.9680 | Final Test Task1 Acc: 0.8428 | Final Test Task2 Acc: 0.5524 | Best Task1 Test Acc: 0.6084 | Best Epoch: 147
+Subject: A03 | Train Task1 Acc: 0.9961 | Train Task2 Acc: 0.9645 | Final Test Task1 Acc: 0.8601 | Final Test Task2 Acc: 0.7204 | Best Task1 Test Acc: 0.7670 | Best Epoch: 267
+Subject: A04 | Train Task1 Acc: 0.9986 | Train Task2 Acc: 0.9711 | Final Test Task1 Acc: 0.8717 | Final Test Task2 Acc: 0.5209 | Best Task1 Test Acc: 0.5665 | Best Epoch: 93
+Subject: A05 | Train Task1 Acc: 0.9973 | Train Task2 Acc: 0.9748 | Final Test Task1 Acc: 0.8966 | Final Test Task2 Acc: 0.4947 | Best Task1 Test Acc: 0.4947 | Best Epoch: 300
+Subject: A06 | Train Task1 Acc: 0.9969 | Train Task2 Acc: 0.9577 | Final Test Task1 Acc: 0.8831 | Final Test Task2 Acc: 0.3745 | Best Task1 Test Acc: 0.4247 | Best Epoch: 139
+Subject: A07 | Train Task1 Acc: 0.9954 | Train Task2 Acc: 0.9750 | Final Test Task1 Acc: 0.8781 | Final Test Task2 Acc: 0.7218 | Best Task1 Test Acc: 0.7465 | Best Epoch: 165
+Subject: A08 | Train Task1 Acc: 0.9973 | Train Task2 Acc: 0.9857 | Final Test Task1 Acc: 0.8605 | Final Test Task2 Acc: 0.6250 | Best Task1 Test Acc: 0.6571 | Best Epoch: 189
+Subject: A09 | Train Task1 Acc: 0.9969 | Train Task2 Acc: 0.9498 | Final Test Task1 Acc: 0.8914 | Final Test Task2 Acc: 0.6643 | Best Task1 Test Acc: 0.6859 | Best Epoch: 275
+--------------------------------------------------
+Average Test Accuracy across subjects on Supervised: 0.6340
+==================================================
