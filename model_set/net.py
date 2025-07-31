@@ -120,7 +120,7 @@ class EEGNet(nn.Module):
         self.classifier = nn.Sequential(
             nn.Flatten(),
             nn.Linear(n_out_time[-1] * n_out_time[-2] * n_out_time[-3], num_classes),
-            nn.Softmax(dim=1)  # 使用dim=1，因为输入的是(batch_size, nb_classes)
+            # nn.Softmax(dim=1)  # 使用dim=1，因为输入的是(batch_size, nb_classes)
         )
 
     def forward(self, x):

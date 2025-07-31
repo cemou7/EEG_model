@@ -10,6 +10,7 @@ import wget
 import sys
 from sklearn.preprocessing import minmax_scale
 from sklearn.model_selection import train_test_split
+from sklearn.manifold import TSNE
 import torch
 from mne.io import BaseRaw
 from scipy.linalg import sqrtm
@@ -17,6 +18,8 @@ from scipy.fftpack import dct, idct
 from scipy.signal import firwin, lfilter, filtfilt, butter
 from numpy.random import default_rng
 import shutil
+import re
+import matplotlib.pyplot as plt
 import pdb
 
 channels = [["FC1", "FC2"],
@@ -67,13 +70,7 @@ class Utils:
                           ["C1", "C2"],
                           ["CP1", "CP2"],
                           ["CP3", "CP4"],
-                          ["CP5", "CP6"]],
-
-                    "obj1": [["C3", "C4"],
-                             ["P1", "P2"],
-                             ["PO7", "PO8"],
-                             ["O1", "O2"]]
-                    }
+                          ["CP5", "CP6"]]}
 
     @staticmethod
     def download_data(save_path: str = os.getcwd()) -> str:
@@ -218,7 +215,7 @@ class Utils:
         raw_filtered = []
         for subj in list_of_raws:
             if subj.info["sfreq"] == 160.0:
-                subj.filter(1.0, 79.0, fir_design='firwin', skip_by_annotation='edge')
+                subj.filter(4.0, 38.0, fir_design='firwin', skip_by_annotation='edge')
                 subj.notch_filter(freqs=60)
                 raw_filtered.append(subj)
             else:
@@ -228,38 +225,27 @@ class Utils:
                 raw_filtered.append(subj)
 
         return raw_filtered
-    
-    @staticmethod
-    def bandpass_cnt(data, low_cut_hz, high_cut_hz, fs, filt_order=200, zero_phase=False):
-        # nyq_freq = 0.5 * fs
-        # low = low_cut_hz / nyq_freq
-        # high = high_cut_hz / nyq_freq
-
-        # win = firwin(filt_order, [low, high], window='blackman', ass_zero='bandpass')
-        win = firwin(filt_order, [low_cut_hz, high_cut_hz], window='blackman', fs=fs, pass_zero='bandpass')
-
-        data_bandpassed = lfilter(win, 1, data)
-        if zero_phase:
-            data_bandpassed = filtfilt(win, 1, data)
-        return data_bandpassed
 
     @staticmethod
-    def select_channels(raws: List[BaseRaw], ch_list: List ) -> List[BaseRaw]:
+    def select_channels(raws: List[BaseRaw], ch_list: List, allselect = False ) -> List[BaseRaw]:
         """
         Slice channels
         :raw: List[BaseRaw], List of Raw EEG data
         :ch_list: List
         :return: List[BaseRaw]
         """
-        s_list = []
-        for raw in raws:
-            s_list.append(raw.pick_channels(ch_list))
+        if allselect == True:
+            return raws
+        else:
+            s_list = []
+            for raw in raws:
+                s_list.append(raw.pick_channels(ch_list))
 
-        return s_list
+            return s_list
 
     @staticmethod
-    def epoch(raws: List[BaseRaw], exclude_base: bool =False,
-              tmin: int =0, tmax: int =4):
+    def epoch(raws: List[BaseRaw], exclude_base: bool =False, num_class: int = 5,
+              tmin: int =0, tmax: int =4) -> (np.ndarray, List):
         """
         Split the original BaseRaw into numpy epochs
         :param raws: List[BaseRaw]
@@ -271,10 +257,21 @@ class Utils:
         xs = list()
         ys = list()
         for raw in raws:
-            if exclude_base:
-                event_id = dict(L=2, R=3)
+            if num_class == 5:
+                if exclude_base:
+                    event_id = dict(F=0, L=1, LR=2, R=3)
+                else:
+                    event_id = dict(B=0, F=1, L=2, LR=3, R=4)
+            elif num_class == 3:
+                if exclude_base:
+                    event_id = dict(L=0, R=1)
+                else:
+                    event_id = dict(B=0, L=1, R=2)
             else:
-                event_id = dict(B=1, L=2, R=3)
+                if exclude_base:
+                    event_id = dict(L=0, R=1, F=2)
+                else:
+                    event_id = dict(B=0, L=1, R=2, F=3)               
             tmin, tmax = tmin, tmax
             events, _ = mne.events_from_annotations(raw, event_id=event_id)
 
@@ -282,7 +279,7 @@ class Utils:
                                    exclude='bads')
             epochs = Epochs(raw, events, event_id, tmin, tmax, proj=True, picks=picks,
                             baseline=None, preload=True)
-            pdb.set_trace()
+
             y = list()
             for index, data in enumerate(epochs):
                 y.append(epochs[index]._name)
@@ -308,7 +305,6 @@ class Utils:
             xs.append(Utils.cut_width(np.load(os.path.join(data_path, "x" + name_single_sub + str(sub) + ".npy"))))
             ys.append(np.load(os.path.join(data_path, "y" + name_single_sub + str(sub) + ".npy")))
         return xs, ys
-
 
     @staticmethod
     def scale_sub_by_sub(xs, ys):
@@ -417,7 +413,7 @@ class Utils:
 
         return data_pre
 
-    def physio_prepare_data(data):
+    def prepare_data(data):
         # [-1,1]
 
         data_preprocss = Utils.data_norm(data)
@@ -431,7 +427,7 @@ class Utils:
         return data_preprocessed
 
     @staticmethod
-    def extract_segment_trial(raw_gdb, baseline=(-0.5, 0), duration=4):
+    def extract_segment_trial(raw_gdb, baseline=(0, 0), duration=4):
         '''
         get segmented data and corresponding labels from raw_gdb.
         :param raw_gdb: raw data
@@ -469,47 +465,164 @@ class Utils:
         shuffled_labels = labels[perm]
         return data, labels
 
-    def load_channel_8_only_one(channels, subjects, base_path):
-        array_list = []
-        ys = ()
-        for couple in channels:
-            data_path = os.path.join(base_path, couple[0] + couple[1])
-            sub_name = "_sub_"
+    def save_train_valid_acc_loss_fig(path):
+        """
+        path:logging source file
+        return: train_valid_acc_loss_fig
 
-            sub = subjects     # 只选取一个人的运动想象
-            xs = (Utils.cut_width(
-                 np.load(os.path.join(data_path, "x" + sub_name + str(sub) + ".npy"))))  # xs:(179, 2, 640)
-            ys = (np.load(os.path.join(data_path, "y" + sub_name + str(sub) + ".npy")))  # ys:(179, )
-            array_list.append(xs)
+        """
 
-        merged_array = np.concatenate([array_list[0], array_list[1], array_list[2], array_list[3]], axis=1)
-        return merged_array, ys
+        with open(path, 'r') as file:
+            log_content = file.read()
+        train_acc = re.findall(r'train_acc\s+(\d+\.\d+)', log_content)
+        train_acc = [float(match) for match in train_acc]
+        train_loss = re.findall(r'train_loss\s+(\d+\.\d+)', log_content)
+        train_loss = [float(match) for match in train_loss]
+        valid_acc = re.findall(r'valid_acc\s+(\d+\.\d+)', log_content)
+        valid_acc = [float(match) for match in valid_acc]
+        valid_loss = re.findall(r'valid_loss\s+(\d+\.\d+)', log_content)
+        valid_loss = [float(match) for match in valid_loss]
 
-    def get_data_list(channels, subjects, source_path, selected_class):
-        x_list = list()
-        y_list = list()
-        for i in subjects:
-            x, y = Utils.load_channel_8_only_one(channels, i, base_path=source_path)
-            x_list.append(np.concatenate(x, axis=0))
-            y_list.append(y)
+        matplotlib.use("Agg")
+        plt.style.use('seaborn')
 
-        x_list = np.concatenate(x_list, axis=0)
-        y_list = np.concatenate(y_list)
-        x_list = x_list.reshape((-1, 8, 640))
-        y_list = y_list.reshape((-1, ))
+        SMALL_SIZE = 20
+        MEDIUM_SIZE = 35
+        BIGGER_SIZE = 45
 
-        # 提取指定类别的索引
-        selected_classes = selected_class
-        selected_indices = np.isin(y_list, selected_classes)
-        # 提取指定类别的数据
-        selected_x = x_list[selected_indices]
-        selected_y = y_list[selected_indices]
+        plt.rc('font', size=SMALL_SIZE)          # controls default text sizes
+        plt.rc('axes', titlesize=SMALL_SIZE)     # fontsize of the axes title
+        plt.rc('axes', labelsize=MEDIUM_SIZE)    # fontsize of the x and y labels
+        plt.rc('xtick', labelsize=SMALL_SIZE)    # fontsize of the tick labels
+        plt.rc('ytick', labelsize=SMALL_SIZE)    # fontsize of the tick labels
+        plt.rc('legend', fontsize=SMALL_SIZE)    # legend fontsize
+        plt.rc('figure', titlesize=BIGGER_SIZE)  # fontsize of the figure title
 
-        label_map = {"L": 0, "R": 1, "LR": 2, "F": 3}
-        labels = [label_map[label] for label in selected_y]
+        plt.subplot(1,2,1, title="train and valid Accuracy")
+        plt.plot(range(len(train_acc)), train_acc, label="Train", linewidth=4)
+        plt.plot(range(len(valid_acc)), valid_acc, label="Valid", linewidth=4)
+        plt.legend(loc='lower right')
+        
+        plt.subplot(1,2,2, title="train and valid Loss")
+        plt.plot(range(len(train_loss)), train_loss, label="Train", linewidth=4)
+        plt.plot(range(len(valid_loss)), valid_loss, label="Valid", linewidth=4)
+        plt.legend(loc='upper right')
+        
+        # plt.subplots_adjust(wspace=0.5)
+        plt.savefig('./train_valid_acc_loss.png', dpi = 300)
+        plt.close()
 
-        return np.array(selected_x), np.array(labels)
+    def save_acc_fig(path):
+        """
+        path:logging source file
+        return: train_valid_acc_fig
 
+        """
+        with open(path, 'r') as file:
+            log_content = file.read()
+        train_acc = re.findall(r'train_acc\s+(\d+\.\d+)', log_content)
+        train_acc = [float(match) for match in train_acc]
+        valid_acc = re.findall(r'valid_acc\s+(\d+\.\d+)', log_content)
+        valid_acc = [float(match) for match in valid_acc]
+        plt.figure()
+        plt.plot(range(len(train_acc)), train_acc, label='train_acc', linewidth=4)
+        plt.plot(range(len(valid_acc)), valid_acc, label='valid_acc', linewidth=4)
+        plt.title('model accuracy')
+        plt.ylabel('accuracy')
+        plt.xlabel('epoch')
+        plt.legend(loc='lower right')
+        plt.savefig('./acc.png')
+        plt.close()
+
+    def save_loss_fig(path):
+        """
+        path:logging source file
+        return: train_valid_loss_fig
+
+        """
+        with open(path, 'r') as file:
+            log_content = file.read()
+        train_loss = re.findall(r'train_loss\s+(\d+\.\d+)', log_content)
+        train_loss = [float(match) for match in train_loss]
+        valid_loss = re.findall(r'valid_loss\s+(\d+\.\d+)', log_content)
+        valid_loss = [float(match) for match in valid_loss]
+        plt.figure()
+        plt.plot(range(len(train_loss)), train_loss, label='train_loss', linewidth=4)
+        plt.plot(range(len(valid_loss)), valid_loss, label='valid_loss', linewidth=4)
+        plt.title('model loss')
+        plt.ylabel('loss')
+        plt.xlabel('epoch')
+        plt.legend(loc='lower right')
+        plt.savefig('./loss.png', dpi = 300)
+        plt.close()
+
+    def tSNE_plot(data, label, tSNE_path):
+        data = data.cpu().detach().numpy()
+        label = label.cpu().detach().numpy()
+        
+        mean = np.mean(data)
+        std = np.std(data)
+        data = (data - mean) / std
+        
+        tsne = TSNE(n_components=2, init='pca', random_state=0)
+        result = tsne.fit_transform(data)
+        
+        x_min, x_max = np.min(result, 0), np.max(result, 0)
+        result = (result - x_min) / (x_max - x_min)
+
+        fig = plt.figure()
+        ax = plt.subplot(111)
+        for i in range(result.shape[0]):
+            plt.text(result[i, 0], result[i, 1], str(label[i]),
+                    color=plt.cm.Set1(label[i] / 10.),
+                    fontdict={'weight': 'bold', 'size': 9})
+        plt.xticks([])
+        plt.yticks([])
+        plt.title('t-SNE embedding of the digits [epoch {}]'.format(tSNE_path[68:72]))
+        plt.savefig(tSNE_path)
+        plt.close()
+
+    def plot_embedding(data, label, title):
+        data = data.cpu().detach().numpy()
+        label = label.cpu().detach().numpy()
+        x_min, x_max = np.min(data, 0), np.max(data, 0)
+        data = (data - x_min) / (x_max - x_min)
+    
+        fig = plt.figure()
+        ax = plt.subplot(111)
+        for i in range(data.shape[0]):
+            plt.text(data[i, 0], data[i, 1], str(label[i]),
+                    color=plt.cm.Set1(label[i] / 10.),
+                    fontdict={'weight': 'bold', 'size': 9})
+        plt.xticks([])
+        plt.yticks([])
+        plt.title(title)
+        plt.savefig('./{:s}.png'.format(title), dpi=300)
+        plt.close()
+
+    def label_smooth(ground_truth_angle):
+        smoothed_label = []
+        for ground_truth in ground_truth_angle:
+            label = np.zeros(9)
+            curve = 2
+            for i in range(label.shape[0]):
+                if abs(i - ground_truth) <= curve:
+                    label[i] = max(label[i], np.exp(-1 * (i - ground_truth) ** 2 / curve ** 2))
+                elif abs(i + 9 - ground_truth) <= curve:
+                    label[i] = max(label[i], np.exp(-1 * (i + 9 - ground_truth) ** 2 / curve ** 2))
+                elif abs(i - 9 - ground_truth) <= curve:
+                    label[i] = max(label[i], np.exp(-1 * (i - 9 - ground_truth) ** 2 / curve ** 2))
+
+            label = (label / np.sum(label)).astype(np.float32)
+            smoothed_label.append(label)
+        return np.array(smoothed_label)
+
+    def reverse_label_smooth(smoothed_label):
+        ground_truth_angle = []
+        for label in smoothed_label:
+            ground_truth = torch.argmax(label.clone().detach())
+            ground_truth_angle.append(ground_truth.item())
+        return torch.tensor(ground_truth_angle).to(smoothed_label.device)
 
 if __name__ == "__main__":
     x_MI, y_MI = Utils.loadData_MI()

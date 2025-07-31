@@ -3,7 +3,7 @@ EEG Conformer
 
 Convolutional Transformer for EEG decoding
 
-Couple CNN and Transformer in a concise manner with amazing results
+Couple CNN and Tr  ansformer in a concise manner with amazing results
 """
 
 import os
@@ -13,7 +13,7 @@ os.environ["CUDA_VISIBLE_DEVICES"] = ','.join(map(str, gpus))
 import math
 from torchsummary import summary
 import torch
-import torch.nn.functional as F
+import torch.nn.functional as F 
 from torch import nn
 from torch import Tensor
 
@@ -148,6 +148,7 @@ class ClassificationHead(nn.Sequential):
         )
         self.fc = nn.Sequential(
             nn.Linear(2440, 256),
+            # nn.Linear(440, 256),
             nn.ELU(),
             nn.Dropout(0.5),
             nn.Linear(256, 32),

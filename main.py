@@ -1,7 +1,7 @@
 import torch
 import numpy as np
 from torch.utils.data import DataLoader, ConcatDataset
-from data_processing.data_get import get_EEGSet, EEGDataSet
+from data_processing.data_get import get_EEGSet, EEGDataSet, prepare_data
 from model_set.net import EEGNet
 from experiment import Experiment, weights_init
 from model_set.net_compared import ShallowConvNet
@@ -10,13 +10,16 @@ from model_set.conformer import Conformer
 from model_set.dfformer import get_dfformer_model
 from PatchTST_supervised.models import PatchTST
 from model_set import iTransformer, MixFormer
-from data_loader import PHYSIONET
+# from data_loader import PHYSIONET
 import os
 import sys
-sys.path.append("/home/work3/wkh/CL-Model")
+sys.path.append("/home/work/CZT/CL-Model")
 
 os.environ["CUDA_DEVICE_ORDER"]="PCI_BUS_ID"   
-os.environ["CUDA_VISIBLE_DEVICES"]="0"          # if use '2,1', then in pytorch, gpu2 has id 0
+os.environ["CUDA_VISIBLE_DEVICES"]="2"          # if use '2,1', then in pytorch, gpu2 has id 0
+
+base_dir = os.path.abspath(os.getcwd())
+
 
 def setup_seed(seed=521):
     torch.manual_seed(seed)
@@ -100,8 +103,8 @@ def get_dataloader(batch_size, data_set):
 
 
 def get_pre_dataloader(batch_size, data_set):
-    data_path = np.load("data2a/data_bci2a_A07_data.npy")
-    label_path = np.load("data2a/data_bci2a_A07_label.npy")
+    data_path = np.load("dataset/data2a/data_bci2a_A07_data.npy")
+    label_path = np.load("dataset/data2a/data_bci2a_A07_label.npy")
 
     train_set, test_set = data_path[0:288], data_path[288:]
     train_label_set, test_label_set = label_path[0:288], label_path[288:]
@@ -132,8 +135,8 @@ def get_model(model_name, device, model_classification):
                        classification=model_classification
                        )
     elif model_name == 'EEG_Conformer':
-        # eeg_net = Conformer()
         eeg_net = Conformer(channel=22, n_classes=4, cla=True)
+        # eeg_net = Conformer(channel=3, n_classes=2, cla=True)
     elif model_name == 'dfformer':
         eeg_net = get_dfformer_model()
     elif model_name == 'PatchTST':
@@ -146,6 +149,8 @@ def get_model(model_name, device, model_classification):
         eeg_net = MixFormer.MixFormer(cla=model_classification)
     elif model_name == 'EEGNet':
         eeg_net = EEGNet(num_classes=4, chans=22, samples=1000, kernLength=512//2)
+        # eeg_net = EEGNet(num_classes=4, chans=3, samples=1000, kernLength=512//2)
+        # eeg_net = EEGNet(num_classes=2, chans=3, samples=1000, kernLength=512//2)
     else:
         eeg_net = ShallowConvNet(num_classes=4, chans=22, samples=1125)
 
@@ -155,16 +160,16 @@ def get_model(model_name, device, model_classification):
     return eeg_net
 
 
-def get_data_bci2a_cross_validation(batch_size, valid_data_set):
+def get_data_bci2a_cross_domain(batch_size, valid_data_set):
     index = 1
-    all_data_set = ['A01', 'A02', 'A03', 'A04', 'A05', 'A06', 'A07', 'A08', 'A09']        # 
+    all_data_set = ['A01', 'A02', 'A03', 'A04', 'A05', 'A06', 'A07', 'A08'] # 'A09'   9默认当测试集     
     for data in all_data_set:
         if data == valid_data_set:
-            valid_data = np.load('data2a/data_bci2a_' + data + '_data.npy')
-            valid_label = np.load('data2a/data_bci2a_' + data + '_label.npy')
+            valid_data = np.load('dataset/data2a/data_bci2a_' + data + '_data.npy')
+            valid_label = np.load('dataset/data2a/data_bci2a_' + data + '_label.npy')
         else:
-            train_data_set = np.load('data2a/data_bci2a_' + data + '_data.npy')
-            train_label_set = np.load('data2a/data_bci2a_' + data + '_label.npy')
+            train_data_set = np.load('dataset/data2a/data_bci2a_' + data + '_data.npy')
+            train_label_set = np.load('dataset/data2a/data_bci2a_' + data + '_label.npy')
             if index == 1:
                 all_train_data = train_data_set
                 all_train_label = train_label_set
@@ -173,12 +178,38 @@ def get_data_bci2a_cross_validation(batch_size, valid_data_set):
                 all_train_data = np.concatenate((all_train_data, train_data_set), axis=0)
                 all_train_label = np.concatenate((all_train_label, train_label_set), axis=0)
 
-    # n_random_samples = 2000
-    # random_indices = np.random.choice(all_train_data.shape[0], size=n_random_samples, replace=False)
+    all_train_data = prepare_data(all_train_data)
+    valid_data = prepare_data(valid_data)
+    train_dataset = EEGDataSet(all_train_data, all_train_label)
+    val_dataset = EEGDataSet(valid_data, valid_label)
 
-    # all_train_data = all_train_data[random_indices]
-    # all_train_label = all_train_label[random_indices]
+    print('训练数据集长度: {}'.format(len(train_dataset)))
+    print('测试数据集长度: {}'.format(len(val_dataset)))
 
+    train_dataloader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True, drop_last=False)
+    test_dataloader = DataLoader(val_dataset, batch_size=batch_size, shuffle=False, drop_last=False)
+
+    return train_dataloader, test_dataloader
+def get_data_bci2a_cross_domain_filter(batch_size, valid_data_set):
+    index = 1
+    all_data_set = ['A01', 'A02', 'A03', 'A04', 'A05', 'A06', 'A07', 'A08'] # 'A09'   9默认当测试集     
+    for data in all_data_set:
+        if data == valid_data_set:
+            valid_data = np.load('dataset/data_2a_filter/' + data + '_data.npy')
+            valid_label = np.load('dataset/data_2a_filter/' + data + '_label.npy')
+        else:
+            train_data_set = np.load('dataset/data_2a_filter/' + data + '_data.npy')
+            train_label_set = np.load('dataset/data_2a_filter/' + data + '_label.npy')
+            if index == 1:
+                all_train_data = train_data_set
+                all_train_label = train_label_set
+                index += 1
+            else:
+                all_train_data = np.concatenate((all_train_data, train_data_set), axis=0)
+                all_train_label = np.concatenate((all_train_label, train_label_set), axis=0)
+
+    all_train_data = prepare_data(all_train_data)
+    valid_data = prepare_data(valid_data)
     train_dataset = EEGDataSet(all_train_data, all_train_label)
     val_dataset = EEGDataSet(valid_data, valid_label)
 
@@ -190,14 +221,44 @@ def get_data_bci2a_cross_validation(batch_size, valid_data_set):
 
     return train_dataloader, test_dataloader
 
+def get_data_bci2a_cross_domain_no_reject(batch_size, valid_data_set):
+    index = 1
+    all_data_set = ['A01', 'A02', 'A03', 'A04', 'A05', 'A06', 'A07', 'A08'] # 'A09'   9默认当测试集     
+    for data in all_data_set:
+        if data == valid_data_set:
+            valid_data = np.load('dataset/data2a_no_reject/' + data + '_data.npy')
+            valid_label = np.load('dataset/data2a_no_reject/' + data + '_label.npy')
+        else:
+            train_data_set = np.load('dataset/data2a_no_reject/' + data + '_data.npy')
+            train_label_set = np.load('dataset/data2a_no_reject/' + data + '_label.npy')
+            if index == 1:
+                all_train_data = train_data_set
+                all_train_label = train_label_set
+                index += 1
+            else:
+                all_train_data = np.concatenate((all_train_data, train_data_set), axis=0)
+                all_train_label = np.concatenate((all_train_label, train_label_set), axis=0)
+
+    all_train_data = prepare_data(all_train_data)
+    valid_data = prepare_data(valid_data)
+    train_dataset = EEGDataSet(all_train_data, all_train_label)
+    val_dataset = EEGDataSet(valid_data, valid_label)
+
+    print('训练数据集长度: {}'.format(len(train_dataset)))
+    print('测试数据集长度: {}'.format(len(val_dataset)))
+
+    train_dataloader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True, drop_last=False)
+    test_dataloader = DataLoader(val_dataset, batch_size=batch_size, shuffle=False, drop_last=False)
+
+    return train_dataloader, test_dataloader
 def get_data_bci2a_test_vaild(batch_size):
 
 
-    valid_data = np.load('data2a/data_bci2a_valid_data.npy')
-    valid_label = np.load('data2a/data_bci2a_valid_label.npy')
+    valid_data = np.load('dataset/data2a/data_bci2a_valid_data.npy')
+    valid_label = np.load('dataset/data2a/data_bci2a_valid_label.npy')
 
-    train_data = np.load('data2a/data_bci2a_train_data.npy')
-    train_label = np.load('data2a/data_bci2a_train_label.npy')
+    train_data = np.load('dataset/data2a/data_bci2a_train_data.npy')
+    train_label = np.load('dataset/data2a/data_bci2a_train_label.npy')
 
 
     train_dataset = EEGDataSet(train_data, train_label)
@@ -210,6 +271,48 @@ def get_data_bci2a_test_vaild(batch_size):
     test_dataloader = DataLoader(val_dataset, batch_size=batch_size, shuffle=False, drop_last=False)
 
     return train_dataloader, test_dataloader
+
+
+
+def get_data_bci2b_mi_rest(batch_size=64, val_subj='B08', test_subj= 'B09'):
+    # 拼接数据目录和保存目录
+    data_path = os.path.join(base_dir, 'dataset/data_2b_mi_rest')
+    subject_ids = ['B01', 'B02', 'B03', 'B04', 'B05', 'B06', 'B07', 'B08', 'B09']
+    train_subjs = [s for s in subject_ids if s != val_subj and s != test_subj]
+
+    all_train_data, all_train_label = [], []
+
+    for subj in train_subjs:
+        data_file = os.path.join(data_path, f'{subj}_data.npy')
+        label_file = os.path.join(data_path, f'{subj}_label.npy')
+        if not os.path.exists(data_file) or not os.path.exists(label_file):
+            print(f"缺少训练数据文件: {data_file} 或 {label_file}")
+            continue
+        data = np.load(data_file)
+        label = np.load(label_file)
+
+        data = prepare_data(data)
+
+        all_train_data.append(data)
+        all_train_label.append(label)
+
+    train_data = np.concatenate(all_train_data, axis=0)
+    train_label = np.concatenate(all_train_label, axis=0)
+
+    indices = np.arange(len(train_data))
+    np.random.shuffle(indices)
+    train_data = train_data[indices]
+    train_label = train_label[indices]
+
+    val_data = np.load(os.path.join(data_path, f'{val_subj}_data.npy'))
+    val_label = np.load(os.path.join(data_path, f'{val_subj}_label.npy'))
+
+    val_data = prepare_data(val_data)
+
+    train_loader = DataLoader(EEGDataSet(train_data, train_label), batch_size=batch_size, shuffle=True)
+    val_loader = DataLoader(EEGDataSet(val_data, val_label), batch_size=batch_size, shuffle=False)
+
+    return train_loader, val_loader
 
 if __name__ == '__main__':
     # 随机种子，保证生成的随机数是一样的
@@ -242,16 +345,17 @@ if __name__ == '__main__':
     }
     kwargs = {'num_workers': 1, 'pin_memory': True}
     # ============================
-    data_set = 'A01'      # 'A01', 'A02', 'A03', 'A04', 'A05', 'A06', 'A07', 'A08'
-    model_name = 'EEG_Conformer'     # LMDANet   EEG_Conformer   PatchTST    iTransformer    MixFormer   dfformer EEGNet
-    model_save_path = "model/" + model_name + "_test_val.pth"    # _classification  _diff_CL_64  _test_val
+    data_set = 'A08'      # 'A01', 'A02', 'A03', 'A04', 'A05', 'A06', 'A07', 'A08' ,'B08'
+    model_name = 'EEGNet'     # LMDANet   EEG_Conformer   PatchTST    iTransformer    MixFormer   dfformer EEGNet
+    model_save_path = "model/" + model_name + "_filter_2a_data.pth"    # _classification  _diff_CL_64  _test_val  _test_val.pth  _mi_rest
+    data_name = '2a_no_reject'    #'2a_CrossDomain_filter'  '2a_CrossDomain'
     classification = True                                      # False: pre-train contrastive net  or  True: fine-tone
     # ============================
 
-    # train_dataloader, test_dataloader = get_dataloader(data_set=data_set, batch_size=batch_size)
-    # train_dataloader, test_dataloader = get_pre_dataloader(data_set=data_set, batch_size=batch_size)
-    # train_dataloader, test_dataloader = get_data_bci2a_cross_validation(batch_size=batch_size, valid_data_set=data_set)
-    train_dataloader, test_dataloader = get_data_bci2a_test_vaild(batch_size=batch_size)
+    # train_dataloader, test_dataloader = get_data_bci2a_cross_domain_filter(batch_size=batch_size, valid_data_set=data_set)
+    # train_dataloader, test_dataloader = get_data_bci2a_cross_domain(batch_size=batch_size, valid_data_set=data_set)
+    train_dataloader, test_dataloader = get_data_bci2a_cross_domain_no_reject(batch_size=batch_size, valid_data_set=data_set)
+
 
     device = get_device()
     model = get_model(model_name=model_name, device=device, model_classification=classification)
@@ -268,30 +372,7 @@ if __name__ == '__main__':
                      model_save_path=model_save_path,
                      temperature=temperature,
                      loss_func=loss_func,
-                     classification=classification
+                     classification=classification,
+                     data_name=data_name
                      )
-
-    # if not classification:
-    #     # 1. backbone pre-train
-    #     print("start: backbone pre-train")
-    #     exp.train_run()
-    # else:
-    #     # 2. fine-tune
-    #     print("start: model fine-tune")
-    #     exp.train_run_finetune()
-
-    # 3. draw features t-SNE UMAP
-    # exp.draw_feature(method='t-SNE', test_draw=False, point_num=288)
-
-    # draw_point_feature
-    # train_dataloader_A09, test_dataloader_A09 = get_dataloader(data_set=['A09'], batch_size=batch_size)
-    # exp.draw_point_feature(train_data=test_dataloader_A09)
-
     exp.run()
-    # exp.train_run()best acc: 0.6267361111111112
-    # save model epoch: 0
-
-    # exp.run_add_loss_contrast(lamda=0.6)
-    # exp.test_run_classification()
-
-    # exp.draw_feature(test_draw=True, point_num=288, method='UMAP')     # t-SNE  UMAP

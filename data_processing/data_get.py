@@ -8,7 +8,7 @@ import os
 import numpy as np
 from torch.utils.data import Dataset, TensorDataset
 import torch
-
+from scipy.signal import butter, filtfilt
 class EEGDataSet(Dataset):
     def __init__(self, x, y):
         self.data = torch.from_numpy(x)
